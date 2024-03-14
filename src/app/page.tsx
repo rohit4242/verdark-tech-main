@@ -234,7 +234,7 @@ const testimonials = [
   },
 ];
 
-const words = `Simple Safe Secure`;
+const words = `Simple. Safe. Fast.`;
 
 const content = [
   {
