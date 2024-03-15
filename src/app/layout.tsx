@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer";
 import NavBar from "@/components/NavBar";
+import Typewriter from "@/components/Typewriter";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +23,8 @@ export default function RootLayout({
         <NavBar className="top-2 w-full" />
 
         {children}
+        <Typewriter />
+
         <Footer />
       </body>
     </html>

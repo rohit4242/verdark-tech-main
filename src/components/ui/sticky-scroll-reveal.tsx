@@ -60,15 +60,15 @@ export const StickyScroll = ({
           backgroundColor:
             backgroundColors[activeCard % backgroundColors.length],
         }}
-        className="h-[40rem] max-w-screen-xl mx-auto w-full overflow-y-auto flex justify-center relative space-x-10 rounded-md p-10 no-scrollbar"
+        className="h-[40rem] max-w-screen-xl md:mx-auto w-full overflow-y-auto flex justify-start relative space-x-10 rounded-md p-2 md:p-10 no-scrollbar"
         ref={ref}
       >
-        <div className="h-60 w-96 hidden  rounded-md sticky md:flex justify-center items-center top-40 overflow-hidden">
-          <TextGenerateEffect words={words} className="my-2 w-full p-10" />
-        </div>
+        {/* <div className="h-60 w-96 hidden  rounded-md sticky md:flex justify-center items-center top-40 overflow-hidden">
+          <TextGenerateEffect words={words} className="my-2 w-full md:p-10" />
+        </div> */}
 
-        <div className="div relative flex items-center px-4 top-0 w-full">
-          <div className="absolute max-w-4xl top-0">
+        <div className="relative flex items-center p-0 md:px-4 top-0 w-full">
+          <div className="absolute max-w-4xl top-0 ">
             {content.map((item, index) => (
               <div key={item.title + index} className="my-20">
                 <motion.h2
@@ -78,7 +78,7 @@ export const StickyScroll = ({
                   animate={{
                     opacity: activeCard === index ? 1 : 0.3,
                   }}
-                  className="text-2xl font-bold text-slate-100"
+                  className="text-2xl font-bold text-slate-100 text-gradient"
                 >
                   {item.title}
                 </motion.h2>
@@ -95,7 +95,7 @@ export const StickyScroll = ({
                 </motion.p>
               </div>
             ))}
-            <div className="h-40" />
+            {/* <div className="h-40" /> */}
           </div>
         </div>
         <motion.div

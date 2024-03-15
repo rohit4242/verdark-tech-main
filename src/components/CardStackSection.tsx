@@ -8,7 +8,7 @@ interface CardStackSectionProps {
 
 const CardStackSection: FC<CardStackSectionProps> = ({}) => {
     return (
-        <div className="h-[40rem] flex items-center justify-center w-full max-w-screen-xl mx-auto">
+        <div className="h-[18rem] flex items-center justify-center w-full max-w-screen-xl mx-auto">
           <CardStack items={CARDS} />
         </div>
       );

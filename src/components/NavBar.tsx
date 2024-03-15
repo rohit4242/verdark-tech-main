@@ -36,7 +36,7 @@ const NavBar: FC<NavBarProps> = ({ className }) => {
   return (
     <>
       <nav className="border-gray-200 bg-gray-900">
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-4">
+        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-4 px-4 md:px-0">
           <a
             href="https://flowbite.com/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
@@ -52,7 +52,7 @@ const NavBar: FC<NavBarProps> = ({ className }) => {
               Vedark
             </span>
           </a>
-          <button type="button" onClick={toggleMenu} className="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-x-2 rounded-lg border  bg-white shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none bg-transparent border-gray-700 text-white hover:bg-white/10 focus:outline-none focus:ring-1 focus:ring-gray-600" data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
+          <button type="button" onClick={toggleMenu} className="hs-collapse-toggle md:hidden p-2 inline-flex justify-center items-center gap-x-2 rounded-lg border  bg-slate-950 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none bg-transparent border-gray-700 text-white hover:bg-white/10 focus:outline-none focus:ring-1 focus:ring-gray-600" data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
           {isMenuOpen ? (
               <svg
                 className="flex-shrink-0 size-4"
