@@ -60,10 +60,10 @@ export const StickyScroll = ({
           backgroundColor:
             backgroundColors[activeCard % backgroundColors.length],
         }}
-        className="h-[40rem] w-full overflow-y-auto flex justify-center relative space-x-10 rounded-md p-10 no-scrollbar"
+        className="h-[40rem] max-w-screen-xl mx-auto w-full overflow-y-auto flex justify-center relative space-x-10 rounded-md p-10 no-scrollbar"
         ref={ref}
       >
-        <div className="h-60 w-96 rounded-md sticky flex justify-center items-center top-40 overflow-hidden">
+        <div className="h-60 w-96 hidden  rounded-md sticky md:flex justify-center items-center top-40 overflow-hidden">
           <TextGenerateEffect words={words} className="my-2 w-full p-10" />
         </div>
 

@@ -6,6 +6,7 @@ import MacbookScrollSection from "@/components/MacbookScrollSection";
 import Typewriter from "@/components/Typewriter";
 import Hero from "@/components/hero";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
+import { LongTextGenerateEffect } from "@/components/ui/long-text-generate-effect";
 import { StickyScroll } from "@/components/ui/sticky-scroll-reveal";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import Image from "next/image";
@@ -282,23 +283,30 @@ const content = [
     ),
   },
 ];
-
+ 
+const words = `Oxygen gets you high. In a catastrophic emergency, we're taking giant, panicked breaths. Suddenly you become euphoric, docile. You accept your fate. It's all right here. Emergency water landing, six hundred miles an hour. Blank faces, calm as Hindu cows
+`;
 export default function Home() {
   return (
-    <main className="flex  min-h-screen flex-col items-center justify-between p-10">
+    <main className="flex min-h-screen flex-col items-center justify-between md:p-10 p-4">
       <Hero />
-      <InfiniteMovingCards
+
+      {/* <InfiniteMovingCards
         items={testimonials}
         speed="normal"
         direction="right"
         className="my-10"
-      />
+      /> */}
+      <LongTextGenerateEffect words={words} className="max-w-screen-xl mx-auto" />
+
       <Heading title="Why Us" subtitle="Just For Fun Bro" />
+
 
       <StickyScroll content={content} />
 
       <Heading title="Why Us" subtitle="Just For Fun Bro" />
-      <div className="grid grid-cols-3 gap-8 justify-center my-10">
+
+      <div className="flex flex-wrap gap-8 justify-center my-10 max-w-screen-xl mx-auto w-full">
         <Card />
         <Card />
         <Card />
@@ -310,15 +318,15 @@ export default function Home() {
 
       <MacbookScrollSection />
 
-      <InfiniteMovingCards
+      {/* <InfiniteMovingCards
         items={testimonials}
         speed="normal"
         direction="right"
-      />
+      /> */}
 
-      <Heading title="Why Us" subtitle="Just For Fun Bro" />
 
       <BackgroundBeamsSection />
+      <Heading title="Why Us" subtitle="Just For Fun Bro" />
 
       <CardStackSection />
       <Heading title="Why Us" subtitle="Just For Fun Bro" />

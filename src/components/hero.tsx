@@ -32,10 +32,10 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className={`flex md:flex-row flex-col ${styles.paddingY}`}
+      className={`flex md:flex-row flex-col ${styles.paddingY} max-w-screen-xl mx-auto`}
     >
       <div
-        className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}
+        className={`flex-1 ${styles.flexStart} flex-col `}
       >
         <div className="flex flex-row items-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2">
           <Image src={discount} alt="discount" className="w-[32px] h-[32px]" />
@@ -61,14 +61,17 @@ const Hero = () => {
             most likely to fit your needs. We examine annual percentage rates,
             annual fees.
           </p>
+          <div className="hidden md:block">
           <GetStarted />
+
+          </div>
         </div>
         {/* <div className="flex justify-end w-full">
           </div> */}
       </div>
 
       <div
-        className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}
+        className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative md:-right-[7.4rem] -right-4`}
       >
         <Image
           src={robot}

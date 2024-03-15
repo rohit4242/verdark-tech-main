@@ -24,8 +24,8 @@ const words = [
 
 const Typewriter: FC<TypewriterProps> = ({}) => {
   return (
-    <div className="flex flex-col bg-slate-900 w-full rounded-xl items-center justify-center h-[40rem]  ">
-      <p className="text-neutral-200 text-xs sm:text-base  ">
+    <div className="flex flex-col bg-slate-900 w-full rounded-xl items-center justify-center h-[40rem] max-w-screen-xl mx-auto ">
+      <p className="text-neutral-200 text-xl  ">
         The road to freedom starts from here
       </p>
       <TypewriterEffect words={words} />
