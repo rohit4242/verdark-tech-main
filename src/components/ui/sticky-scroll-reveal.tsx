@@ -3,6 +3,9 @@ import React, { useRef } from "react";
 import { useMotionValueEvent, useScroll } from "framer-motion";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
+import { TextGenerateEffect } from "./text-generate-effect";
+
+const words = `Simple. Safe. Fast.`;
 
 export const StickyScroll = ({
   content,
@@ -51,55 +54,62 @@ export const StickyScroll = ({
     "linear-gradient(to bottom right, var(--orange-500), var(--yellow-500))",
   ];
   return (
-    <motion.div
-      animate={{
-        backgroundColor: backgroundColors[activeCard % backgroundColors.length],
-      }}
-      className="h-[40rem] w-full overflow-y-auto flex justify-center relative space-x-10 rounded-md p-10 no-scrollbar"
-      ref={ref}
-    >
-      <div className="div relative flex items-start px-4">
-        <div className="max-w-4xl">
-          {content.map((item, index) => (
-            <div key={item.title + index} className="my-20">
-              <motion.h2
-                initial={{
-                  opacity: 0,
-                }}
-                animate={{
-                  opacity: activeCard === index ? 1 : 0.3,
-                }}
-                className="text-2xl font-bold text-slate-100"
-              >
-                {item.title}
-              </motion.h2>
-              <motion.p
-                initial={{
-                  opacity: 0,
-                }}
-                animate={{
-                  opacity: activeCard === index ? 1 : 0.3,
-                }}
-                className="text-kg text-slate-300 max-w-sm mt-10"
-              >
-                {item.description}
-              </motion.p>
-            </div>
-          ))}
-          <div className="h-40" />
-        </div>
-      </div>
+    <>
       <motion.div
         animate={{
-          background: linearGradients[activeCard % linearGradients.length],
+          backgroundColor:
+            backgroundColors[activeCard % backgroundColors.length],
         }}
-        className={cn(
-          "hidden lg:block h-60 w-96 rounded-md bg-white sticky top-10 overflow-hidden",
-          contentClassName
-        )}
+        className="h-[40rem] w-full overflow-y-auto flex justify-center relative space-x-10 rounded-md p-10 no-scrollbar"
+        ref={ref}
       >
-        {content[activeCard].content ?? null}
+        <div className="h-60 w-96 rounded-md sticky flex justify-center items-center top-40 overflow-hidden">
+          <TextGenerateEffect words={words} className="my-2 w-full p-10" />
+        </div>
+
+        <div className="div relative flex items-center px-4 top-0 w-full">
+          <div className="absolute max-w-4xl top-0">
+            {content.map((item, index) => (
+              <div key={item.title + index} className="my-20">
+                <motion.h2
+                  initial={{
+                    opacity: 0,
+                  }}
+                  animate={{
+                    opacity: activeCard === index ? 1 : 0.3,
+                  }}
+                  className="text-2xl font-bold text-slate-100"
+                >
+                  {item.title}
+                </motion.h2>
+                <motion.p
+                  initial={{
+                    opacity: 0,
+                  }}
+                  animate={{
+                    opacity: activeCard === index ? 1 : 0.3,
+                  }}
+                  className="text-kg text-slate-300 max-w-sm mt-10"
+                >
+                  {item.description}
+                </motion.p>
+              </div>
+            ))}
+            <div className="h-40" />
+          </div>
+        </div>
+        <motion.div
+          animate={{
+            background: linearGradients[activeCard % linearGradients.length],
+          }}
+          className={cn(
+            "hidden lg:block h-96 w-[800px] rounded-md bg-white sticky top-10 right-20 overflow-hidden",
+            contentClassName
+          )}
+        >
+          {content[activeCard].content ?? null}
+        </motion.div>
       </motion.div>
-    </motion.div>
+    </>
   );
 };

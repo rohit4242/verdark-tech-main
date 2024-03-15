@@ -234,8 +234,6 @@ const testimonials = [
   },
 ];
 
-const words = `Simple. Safe. Fast.`;
-
 const content = [
   {
     title: "Collaborative Editing",
@@ -295,11 +293,11 @@ export default function Home() {
         direction="right"
         className="my-10"
       />
-      <TextGenerateEffect words={words} className="my-2 w-full p-10" />
+      <Heading title="Why Us" subtitle="Just For Fun Bro" />
 
       <StickyScroll content={content} />
 
-      <Heading title="Why Us"/>
+      <Heading title="Why Us" subtitle="Just For Fun Bro" />
       <div className="grid grid-cols-3 gap-8 justify-center my-10">
         <Card />
         <Card />
@@ -308,6 +306,7 @@ export default function Home() {
         <Card />
         <Card />
       </div>
+      <Heading title="Why Us" subtitle="Just For Fun Bro" />
 
       <MacbookScrollSection />
 
@@ -316,9 +315,13 @@ export default function Home() {
         speed="normal"
         direction="right"
       />
+
+      <Heading title="Why Us" subtitle="Just For Fun Bro" />
+
       <BackgroundBeamsSection />
 
       <CardStackSection />
+      <Heading title="Why Us" subtitle="Just For Fun Bro" />
 
       <Typewriter />
     </main>
