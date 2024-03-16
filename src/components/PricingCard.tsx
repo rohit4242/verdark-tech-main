@@ -1,23 +1,35 @@
 import { FC } from "react";
 import { ButtonForFun } from "./ui/moving-border";
+import Heading from "./Heading";
 
 interface PricingCardProps {}
 
 const PricingCard: FC<PricingCardProps> = ({}) => {
   return (
-    <div className="pt-5 bg-gray-900" id="pricing">
+    <div className="pt-5 bg-gray-950" id="pricing">
       <div className="mx-auto pb-20 mt-4 max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-4xl text-center">
-          <h1 className="text-base font-semibold leading-7 text-indigo-400">
+        <div className="mx-auto max-w-4xl text-center mt-14">
+          <h1 className=" text-lg font-semibold leading-7 text-gradient">
             Pricing
           </h1>
-          <p className="mt-2 text-4xl font-bold tracking-tight text-white sm:text-5xl">
+          <p className="mt-2 text-4xl tracking-tight font-extrabold  text-white">
             Whether it's just you, or your entire team - we've got you covered.
           </p>
+          <div className="w-[25rem] md:w-[40rem] mx-auto h-2 mt-4 relative">
+            {/* Gradients */}
+            <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
+            <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
+            <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-1/4 blur-sm" />
+            <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4" />
+
+            {/* Radial Gradient to prevent sharp edges */}
+            <div className="absolute inset-0 w-full h-full bg-slate-950 [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
+          </div>
+          <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-slate-300">
+            Choose the product that works best
+          </p>
         </div>
-        <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-300">
-          Choose the product that works best
-        </p>
+
         <div className="isolate mx-auto mt-10 grid max-w-md grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           <div className="ring-1 ring-white/10 rounded-3xl p-8 xl:p-10">
             <div className="flex items-center justify-between gap-x-4">

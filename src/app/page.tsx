@@ -1,18 +1,19 @@
 import BackgroundBeamsSection from "@/components/BackgroundBeamsSection";
 import Card from "@/components/Card";
 import CardStackSection from "@/components/CardStackSection";
-import FAQ from "@/components/FAQ";
 import Heading from "@/components/Heading";
 import MacbookScrollSection from "@/components/MacbookScrollSection";
-import PricingCard from "@/components/PricingCard";
-import Typewriter from "@/components/Typewriter";
 import Hero from "@/components/hero";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 import { LongTextGenerateEffect } from "@/components/ui/long-text-generate-effect";
 import { StickyScroll } from "@/components/ui/sticky-scroll-reveal";
-import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import Image from "next/image";
-
+import simple_set_up from "../../public/assets/simple-set-up.png";
+import secure_trading from "../../public/assets/secure_trading.png";
+import cos_start from "../../public/assets/costomisable_strat.png";
+import IMG24 from "../../public/assets/24_7.png";
+import backtesting from "../../public/assets/back_test.png";
+import Powerfull_analytics from "../../public/assets/power_analytics.png";
 const AceternityLogo = () => {
   return (
     <svg
@@ -461,7 +462,7 @@ const content = [
     content: (
       <div className="h-full w-full  flex items-center justify-center text-white">
         <Image
-          src="/linear.webp"
+          src={Powerfull_analytics}
           width={300}
           height={300}
           className="h-full w-full object-cover"
@@ -507,15 +508,42 @@ export default function Home() {
 
       <StickyScroll content={content} />
 
-      <Heading title="Why Us" subtitle="Just For Fun Bro" />
+      <Heading
+        title="Unveiling the Power of Vedark"
+        subtitle="Effortless, Secure, and Profitable Crypto Trading"
+      />
 
       <div className="flex flex-wrap gap-8 justify-center max-w-screen-xl mx-auto w-full">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        <Card
+          description="Get started effortlessly with Vedark's intuitive interface. No coding required!"
+          image={simple_set_up}
+          title="Simple Setup"
+        />
+        <Card
+          description="Vedark prioritizes security with features like AES-256 and API key permissions"
+          image={secure_trading}
+          title="Secure Trading"
+        />
+        <Card
+          description="Build personalized trading strategies or choose from pre-built templates."
+          image={cos_start}
+          title="Customizable Strategies"
+        />
+        <Card
+          description="Vedark works around the clock, so you don't have to. Never miss an opportunity."
+          image={IMG24}
+          title="24/7 Automation"
+        />
+        <Card
+          description="Test your strategies before going live. Optimize IT for maximum gains."
+          image={backtesting}
+          title="Backtesting Made Easy"
+        />
+        <Card
+          description="Gain insights into your performance and make informed decisions."
+          image={Powerfull_analytics}
+          title="Powerful Analytics"
+        />
       </div>
       {/* <Heading title="Why Us" subtitle="Just For Fun Bro" /> */}
 
@@ -524,12 +552,13 @@ export default function Home() {
       <InfiniteMovingCards items={testimonials1} direction="right" />
 
       <BackgroundBeamsSection />
-      <Heading title="Why Us" subtitle="Just For Fun Bro" />
+      <Heading
+        title="Still Not Convinced?"
+        subtitle="Don't just take our word for it. Hear from real users who have experienced the power of Vedark in their crypto trading journey. "
+      />
 
       <CardStackSection />
       <Heading title="Why Us" subtitle="Just For Fun Bro" />
-
-      
     </main>
   );
 }

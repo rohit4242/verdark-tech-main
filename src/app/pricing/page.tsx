@@ -8,7 +8,10 @@ const page: FC<pageProps> = ({}) => {
   return (
     <>
       <PricingCard />
+      <div className="mb-24">
       <FAQ />
+
+      </div>
     </>
   );
 };

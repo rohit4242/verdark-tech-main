@@ -5,6 +5,7 @@ import { FloatingNav } from "./ui/floating-navbar";
 import { IconHome, IconMessage, IconUser } from "@tabler/icons-react";
 import Image from "next/image";
 import logo from "../../public/assets/icon.png";
+import { CircleDollarSign, Contact } from "lucide-react";
 
 interface NavBarProps {
   className?: string;
@@ -15,10 +16,16 @@ const navItems = [
     link: "/",
     icon: <IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />,
   },
+
   {
-    name: "Live Crypto Price",
-    link: "https://crypto-hunter.netlify.app/",
-    icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
+    name: "About Us",
+    link: "/about",
+    icon: <Contact className="h-4 w-4 text-neutral-500 dark:text-white" />,
+  },
+  {
+    name: "Pricing",
+    link: "/pricing",
+    icon: <CircleDollarSign className="h-4 w-4 text-neutral-500 dark:text-white" />,
   },
   {
     name: "Blog",
@@ -105,12 +112,21 @@ const NavBar: FC<NavBarProps> = ({ className }) => {
                   Home
                 </a>
               </li>
+             
               <li>
                 <a
-                  href="https://crypto-hunter.netlify.app/"
+                  href="/about"
                   className="block py-2 px-3  rounded  md:border-0  md:p-0 text-white md:hover:text-blue-500 hover:bg-gray-700 hover:text-white md:hover:bg-transparent"
                 >
-                  Live Crypto Price
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/pricing"
+                  className="block py-2 px-3  rounded  md:border-0  md:p-0 text-white md:hover:text-blue-500 hover:bg-gray-700 hover:text-white md:hover:bg-transparent"
+                >
+                  Pricing
                 </a>
               </li>
               <li>
@@ -118,7 +134,7 @@ const NavBar: FC<NavBarProps> = ({ className }) => {
                   href="/blogs"
                   className="block py-2 px-3  rounded  md:border-0  md:p-0 text-white md:hover:text-blue-500 hover:bg-gray-700 hover:text-white md:hover:bg-transparent"
                 >
-                  blog
+                  Blogs
                 </a>
               </li>
 

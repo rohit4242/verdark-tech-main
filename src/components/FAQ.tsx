@@ -13,7 +13,7 @@ const FAQ: FC<FAQProps> = ({}) => {
   return (
     <>
     <Heading title="FAQ"/>
-      <Accordion type="single" collapsible className="w-full text-white max-w-screen-xl mx-auto mb-14">
+      <Accordion type="single" collapsible className="w-full text-white max-w-screen-xl mx-auto mb-14 p-4">
         <AccordionItem value="item-1">
           <AccordionTrigger>Is it accessible?</AccordionTrigger>
           <AccordionContent>

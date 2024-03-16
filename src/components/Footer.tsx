@@ -1,5 +1,5 @@
 import { FC } from "react";
-import logo from '../../public/assets/icon.png'
+import logo from "../../public/assets/icon.png";
 import Image from "next/image";
 
 interface FooterProps {}
@@ -26,22 +26,27 @@ const Footer: FC<FooterProps> = ({}) => {
           </a>
           <ul className="flex flex-wrap items-center mb-6 text-sm font-medium sm:mb-0 text-gray-400">
             <li>
-              <a href="#" className="hover:underline me-4 md:me-6">
+              <a href="/about" className="hover:underline me-4 md:me-6">
                 About
               </a>
             </li>
             <li>
-              <a href="#" className="hover:underline me-4 md:me-6">
+              <a href="/pricing" className="hover:underline me-4 md:me-6">
+                Pricing
+              </a>
+            </li>
+            <li>
+              <a href="/privacy-policy" className="hover:underline me-4 md:me-6">
                 Privacy Policy
               </a>
             </li>
             <li>
-              <a href="#" className="hover:underline me-4 md:me-6">
-                Licensing
+              <a href="/disclaimer" className="hover:underline me-4 md:me-6">
+                Disclaimer
               </a>
             </li>
             <li>
-              <a href="#" className="hover:underline">
+              <a href="/contact" className="hover:underline">
                 Contact
               </a>
             </li>

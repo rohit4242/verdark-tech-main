@@ -20,6 +20,27 @@ export const blogPosts = [
       author: "Michael Johnson",
       date: "2023-01-20",
     },
+    {
+      id: 4,
+      title: "Building a Responsive Design with CSS",
+      content: "Responsive design is a crucial aspect of modern web development, ensuring that your website looks great on various devices and screen sizes...",
+      author: "Michael Johnson",
+      date: "2023-01-20",
+    },
+    {
+      id: 5,
+      title: "Building a Responsive Design with CSS",
+      content: "Responsive design is a crucial aspect of modern web development, ensuring that your website looks great on various devices and screen sizes...",
+      author: "Michael Johnson",
+      date: "2023-01-20",
+    },
+    {
+      id: 6,
+      title: "Building a Responsive Design with CSS",
+      content: "Responsive design is a crucial aspect of modern web development, ensuring that your website looks great on various devices and screen sizes...",
+      author: "Michael Johnson",
+      date: "2023-01-20",
+    },
   ];
 
   
