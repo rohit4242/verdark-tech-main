@@ -7,7 +7,7 @@ interface HeadingProps {
 
 const Heading: FC<HeadingProps> = ({title,subtitle}) => {
   return (
-    <div className="h-[8rem] w-full max-w-screen-xl mx-auto bg-slate-950 flex flex-col items-center justify-center overflow-hidden rounded-md mt-20 mb-10 ">
+    <div className="h-[9rem] w-full max-w-screen-xl mx-auto bg-slate-950 flex flex-col items-center justify-center overflow-hidden rounded-md mt-20 mb-10 ">
       <h1 className="md:text-4xl text-3xl tracking-tight font-extrabold  text-center text-white relative z-20">
         {title}
       </h1>
