@@ -16,7 +16,7 @@ const page: FC<pageProps> = ({}) => {
               Whether it's just you, or your entire team - we've got you
               covered.
             </p>
-            <div className="w-[25rem] md:w-[40rem] mx-auto h-2 mt-4 relative">
+            <div className="w-[22rem] md:w-[40rem] mx-auto h-2 mt-4 relative">
               {/* Gradients */}
               <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
               <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
