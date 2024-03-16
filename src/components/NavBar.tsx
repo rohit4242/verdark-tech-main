@@ -25,7 +25,9 @@ const navItems = [
   {
     name: "Pricing",
     link: "/pricing",
-    icon: <CircleDollarSign className="h-4 w-4 text-neutral-500 dark:text-white" />,
+    icon: (
+      <CircleDollarSign className="h-4 w-4 text-neutral-500 dark:text-white" />
+    ),
   },
   {
     name: "Blog",
@@ -59,8 +61,15 @@ const NavBar: FC<NavBarProps> = ({ className }) => {
               Vedark
             </span>
           </a>
-          <button type="button" onClick={toggleMenu} className="hs-collapse-toggle md:hidden p-2 inline-flex justify-center items-center gap-x-2 rounded-lg border  bg-slate-950 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none bg-transparent border-gray-700 text-white hover:bg-white/10 focus:outline-none focus:ring-1 focus:ring-gray-600" data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
-          {isMenuOpen ? (
+          <button
+            type="button"
+            onClick={toggleMenu}
+            className="hs-collapse-toggle md:hidden p-2 inline-flex justify-center items-center gap-x-2 rounded-lg border  bg-slate-950 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none bg-transparent border-gray-700 text-white hover:bg-white/10 focus:outline-none focus:ring-1 focus:ring-gray-600"
+            data-hs-collapse="#navbar-collapse-with-animation"
+            aria-controls="navbar-collapse-with-animation"
+            aria-label="Toggle navigation"
+          >
+            {isMenuOpen ? (
               <svg
                 className="flex-shrink-0 size-4"
                 xmlns="http://www.w3.org/2000/svg"
@@ -94,7 +103,7 @@ const NavBar: FC<NavBarProps> = ({ className }) => {
                 <line x1="3" x2="21" y1="18" y2="18" />
               </svg>
             )}
-        </button>
+          </button>
 
           <div
             className={`${
@@ -106,17 +115,17 @@ const NavBar: FC<NavBarProps> = ({ className }) => {
               <li>
                 <a
                   href="/"
-                  className="block py-2 px-3  bg-blue-700 rounded md:bg-transparent  md:p-0 text-white md:text-blue-500"
+                  className="block py-2 px-3  bg-blue-700 rounded md:bg-transparent  md:p-0 text-white md:text-gradient"
                   aria-current="page"
                 >
                   Home
                 </a>
               </li>
-             
+
               <li>
                 <a
                   href="/about"
-                  className="block py-2 px-3  rounded  md:border-0  md:p-0 text-white md:hover:text-blue-500 hover:bg-gray-700 hover:text-white md:hover:bg-transparent"
+                  className="block py-2 px-3  rounded  md:border-0  md:p-0 text-white md:hover:text-gradient hover:bg-gray-700 hover:text-gradient md:hover:bg-transparent"
                 >
                   About Us
                 </a>
@@ -124,7 +133,7 @@ const NavBar: FC<NavBarProps> = ({ className }) => {
               <li>
                 <a
                   href="/pricing"
-                  className="block py-2 px-3  rounded  md:border-0  md:p-0 text-white md:hover:text-blue-500 hover:bg-gray-700 hover:text-white md:hover:bg-transparent"
+                  className="block py-2 px-3  rounded  md:border-0  md:p-0 text-white md:hover:text-gradient hover:bg-gray-700 hover:text-gradient md:hover:bg-transparent"
                 >
                   Pricing
                 </a>
@@ -132,7 +141,7 @@ const NavBar: FC<NavBarProps> = ({ className }) => {
               <li>
                 <a
                   href="/blogs"
-                  className="block py-2 px-3  rounded  md:border-0  md:p-0 text-white md:hover:text-blue-500 hover:bg-gray-700 hover:text-white md:hover:bg-transparent"
+                  className="block py-2 px-3  rounded  md:border-0  md:p-0 text-white md:hover:text-gradient hover:bg-gray-700 hover:text-gradient md:hover:bg-transparent"
                 >
                   Blogs
                 </a>
@@ -141,7 +150,7 @@ const NavBar: FC<NavBarProps> = ({ className }) => {
               <li>
                 <a
                   href="/contact"
-                  className="block py-2 px-3  rounded  md:border-0  md:p-0 text-white md:hover:text-blue-500 hover:bg-gray-700 hover:text-white md:hover:bg-transparent"
+                  className="block py-2 px-3  rounded  md:border-0  md:p-0 text-white md:hover:text-gradient hover:bg-gray-700 hover:text-gradient md:hover:bg-transparent"
                 >
                   Contact
                 </a>

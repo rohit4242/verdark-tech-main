@@ -3,9 +3,11 @@ import discount from "../../public/assets/Discount.svg";
 import robot from "../../public/assets/crypto.png";
 import Image from "next/image";
 import arrowUp from "../../public/assets/arrow-up.svg";
+import Link from "next/link";
 
 const GetStarted = () => (
-  <div
+  <Link href='/pricing' >
+<div
     className={`${styles.flexCenter} w-[140px] h-[140px] rounded-full bg-blue-gradient p-[2px] cursor-pointer`}
   >
     <div
@@ -27,6 +29,8 @@ const GetStarted = () => (
       </p>
     </div>
   </div>
+  </Link>
+  
 );
 const Hero = () => {
   return (
@@ -58,7 +62,7 @@ const Hero = () => {
             Sit back and relax while Vedark manages your crypto trades
             with its advanced automation and risk management features.
           </p>
-          <div className="hidden md:block">
+          <div className="hidden md:block ml-8">
             <GetStarted />
           </div>
         </div>

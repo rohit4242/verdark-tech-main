@@ -558,7 +558,6 @@ export default function Home() {
       />
 
       <CardStackSection />
-      <Heading title="Why Us" subtitle="Just For Fun Bro" />
     </main>
   );
 }

@@ -44,8 +44,8 @@ export const LongTextGenerateEffect = ({
 
   return (
     <div className={cn("font-bold", className)}>
-      <div className="mt-4">
-        <div className=" text-white text-lg  leading-normal tracking-wide">
+      <div className="mt-6">
+        <div className=" text-white text-3xl  leading-normal tracking-wide">
           {renderWords()}
         </div>
       </div>

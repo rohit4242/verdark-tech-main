@@ -116,7 +116,7 @@ const PricingCard: FC<PricingCardProps> = ({}) => {
               >
                 Product Type 2
               </h2>
-              <p className="rounded-full bg-gradient px-2.5 py-1 text-xs font-semibold leading-5 text-white">
+              <p className="rounded-full bg-slate-950 border-2 border-slate-600 px-2.5 py-1 text-xs font-semibold leading-5 text-white">
                 Most popular
               </p>
             </div>
