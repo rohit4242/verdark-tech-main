@@ -67,8 +67,7 @@ const CARDS = [
       <p>
         New to crypto? Vedark's user-friendly design made it easy to start.
         Educational resources helped me learn, and
-        <Highlight>I achieved my investment goals.</Highlight> A great crypto
-        trading partner!
+        <Highlight>I achieved my investment goals.</Highlight>
       </p>
     ),
   },

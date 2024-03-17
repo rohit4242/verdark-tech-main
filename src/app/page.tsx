@@ -547,7 +547,7 @@ export default function Home() {
           title="Customizable Strategies"
         />
         <Card
-          description="Vedark works around the clock, so you don't have to. Never miss an opportunity."
+          description="Vedark works around the clock, so you don't miss any opportunity."
           image={IMG24}
           title="24/7 Automation"
         />
