@@ -43,7 +43,6 @@ const PricingCard: FC<PricingCardProps> = ({}) => {
     if (isFieldEmpty) {
       toast.error("Please fill in all the fields.");
     } else {
-
       setShowSuccessAlert(true);
       // Close the modal after showing the success message
       setTimeout(() => {
@@ -62,8 +61,7 @@ const PricingCard: FC<PricingCardProps> = ({}) => {
               Pricing
             </h1>
             <p className="mt-2 text-4xl tracking-tight font-extrabold  text-white">
-              Whether it's just you, or your entire team - we've got you
-              covered.
+              Unveiling Your Perfect Vedark Plan
             </p>
             <div className="w-[22rem] md:w-[40rem] mx-auto h-2 mt-4 relative">
               {/* Gradients */}
@@ -76,7 +74,7 @@ const PricingCard: FC<PricingCardProps> = ({}) => {
               <div className="absolute inset-0 w-full h-full bg-slate-950 [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
             </div>
             <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-slate-300">
-              Choose the product that works best
+            Choose the Right Powerhouse for Your Crypto Journey
             </p>
           </div>
 
@@ -87,15 +85,15 @@ const PricingCard: FC<PricingCardProps> = ({}) => {
                   id="product1"
                   className="text-lg font-semibold leading-8 text-white"
                 >
-                  Product Type 1
+                  Starter
                 </h2>
               </div>
               <p className="mt-4 text-sm leading-6 text-gray-300">
-                Product details for Product Type 1
+              Simple and cost-effective for beginners
               </p>
               <p className="mt-6 flex items-baseline gap-x-1">
                 <span className="text-4xl font-bold tracking-tight text-white">
-                  € 10 / unit
+                  $ 29 / Month
                 </span>
                 <span className="text-sm font-semibold leading-6 text-gray-300"></span>
               </p>
@@ -123,7 +121,7 @@ const PricingCard: FC<PricingCardProps> = ({}) => {
                       clip-rule="evenodd"
                     ></path>
                   </svg>
-                  40 units
+                  Basic Trading Strategies (e.g., Grid Trading)
                 </li>
                 <li className="flex gap-x-3">
                   <svg
@@ -139,7 +137,7 @@ const PricingCard: FC<PricingCardProps> = ({}) => {
                       clip-rule="evenodd"
                     ></path>
                   </svg>
-                  1 feature
+                  Limited Backtesting Capabilities
                 </li>
                 <li className="flex gap-x-3">
                   <svg
@@ -155,7 +153,7 @@ const PricingCard: FC<PricingCardProps> = ({}) => {
                       clip-rule="evenodd"
                     ></path>
                   </svg>
-                  Fast delivery
+                  1 Active Trading Bot
                 </li>
               </ul>
             </div>
@@ -166,18 +164,18 @@ const PricingCard: FC<PricingCardProps> = ({}) => {
                   id="product2"
                   className="text-lg font-semibold leading-8 text-white"
                 >
-                  Product Type 2
+                  Pro
                 </h2>
                 <p className="rounded-full bg-slate-950 border-2 border-slate-600 px-2.5 py-1 text-xs font-semibold leading-5 text-white">
                   Most popular
                 </p>
               </div>
               <p className="mt-4 text-sm leading-6 text-gray-300">
-                The most popular choice. Product details for Product Type 2
+              Ideal for experienced traders seeking more customization
               </p>
               <p className="mt-6 flex items-baseline gap-x-1">
                 <span className="text-4xl font-bold tracking-tight text-white">
-                  € 20 / unit
+                  $ 79 / Month
                 </span>
                 <span className="text-sm font-semibold leading-6 text-gray-300"></span>
               </p>
@@ -210,7 +208,7 @@ const PricingCard: FC<PricingCardProps> = ({}) => {
                       clip-rule="evenodd"
                     ></path>
                   </svg>
-                  120 units
+                  Advanced Trading Strategies (e.g., Arbitrage)
                 </li>
                 <li className="flex gap-x-3">
                   <svg
@@ -226,7 +224,7 @@ const PricingCard: FC<PricingCardProps> = ({}) => {
                       clip-rule="evenodd"
                     ></path>
                   </svg>
-                  3 different features
+                  Extended Backtesting Capabilities
                 </li>
                 <li className="flex gap-x-3">
                   <svg
@@ -242,7 +240,7 @@ const PricingCard: FC<PricingCardProps> = ({}) => {
                       clip-rule="evenodd"
                     ></path>
                   </svg>
-                  Fast delivery
+                  3 Active Trading Bots
                 </li>
               </ul>
             </div>
@@ -253,15 +251,15 @@ const PricingCard: FC<PricingCardProps> = ({}) => {
                   id="product3"
                   className="text-lg font-semibold leading-8 text-white"
                 >
-                  Product Type 3
+                  Enterprise
                 </h2>
               </div>
               <p className="mt-4 text-sm leading-6 text-gray-300">
-                Product details for Product Type 3
+              Suited for high-volume traders or teams
               </p>
               <p className="mt-6 flex items-baseline gap-x-1">
                 <span className="text-4xl font-bold tracking-tight text-white">
-                  € 50 / unit
+                  € 199 / unit
                 </span>
                 <span className="text-sm font-semibold leading-6 text-gray-300"></span>
               </p>
@@ -289,7 +287,7 @@ const PricingCard: FC<PricingCardProps> = ({}) => {
                       clip-rule="evenodd"
                     ></path>
                   </svg>
-                  240 units
+                  Custom Trading Strategy Development
                 </li>
                 <li className="flex gap-x-3">
                   <svg
@@ -305,7 +303,7 @@ const PricingCard: FC<PricingCardProps> = ({}) => {
                       clip-rule="evenodd"
                     ></path>
                   </svg>
-                  6 different features
+                  Unlimited Backtesting & Analytics
                 </li>
                 <li className="flex gap-x-3">
                   <svg
@@ -321,7 +319,7 @@ const PricingCard: FC<PricingCardProps> = ({}) => {
                       clip-rule="evenodd"
                     ></path>
                   </svg>
-                  Fast delivery
+                  5+ Active Trading Bots
                 </li>
               </ul>
             </div>
@@ -338,7 +336,8 @@ const PricingCard: FC<PricingCardProps> = ({}) => {
             <Alert variant="destructive">
               <AlertTitle>Success!</AlertTitle>
               <AlertDescription>
-                We Will Send You The Payment Details On Your Email Within 2 Working Days.
+                We Will Send You The Payment Details On Your Email Within 2
+                Working Days.
               </AlertDescription>
             </Alert>
           )}
@@ -431,7 +430,10 @@ const PricingCard: FC<PricingCardProps> = ({}) => {
                   <Label htmlFor="r1">Bank Transfer</Label>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <RadioGroupItem value="Credit - Debit/PayPal Invoice" id="r2" />
+                  <RadioGroupItem
+                    value="Credit - Debit/PayPal Invoice"
+                    id="r2"
+                  />
                   <Label htmlFor="r2">Credit - Debit/PayPal Invoice</Label>
                 </div>
                 <div className="flex items-center space-x-2">
@@ -442,7 +444,6 @@ const PricingCard: FC<PricingCardProps> = ({}) => {
                   <RadioGroupItem value="Others Crypto Currency" id="r4" />
                   <Label htmlFor="r4">Others Crypto Currency</Label>
                 </div>
-
               </RadioGroup>
             </div>
           </div>

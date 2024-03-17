@@ -1,5 +1,5 @@
 import { FC } from "react";
-
+import Heading from "@/components/Heading";
 interface pageProps {}
 
 const page: FC<pageProps> = ({}) => {
@@ -10,7 +10,7 @@ const page: FC<pageProps> = ({}) => {
           About Us
         </h1>
         <p className="mt-2 text-4xl tracking-tight font-extrabold  text-white">
-          Whether it's just you, or your entire team - we've got you covered.
+          Your Trusted Partner in Automated Crypto Trading
         </p>
         <div className="w-[22rem] md:w-[40rem] mx-auto h-2 mt-4 relative">
           {/* Gradients */}
@@ -23,7 +23,8 @@ const page: FC<pageProps> = ({}) => {
           <div className="absolute inset-0 w-full h-full bg-slate-950 [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
         </div>
         <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-slate-300">
-          Choose the product that works best
+          Automate your crypto trading with confidence. Vedark is your reliable
+          partner for success.
         </p>{" "}
       </div>
       <div className="sm:flex items-center max-w-screen-xl">
@@ -34,51 +35,50 @@ const page: FC<pageProps> = ({}) => {
         </div>
         <div className="sm:w-1/2 p-5">
           <div className="text">
-            <span className="text-gray-500 border-b-2 border-gradient uppercase">
-              About us
+            <span className="text-gray-300 uppercase">
+              Effortless & Intelligent
             </span>
             <h2 className="my-4 font-bold text-3xl  sm:text-4xl ">
-              About <span className="text-gradient">Our Company</span>
+              <span className="text-gradient">Empowering</span> Crypto Success
             </h2>
             <p className="text-slate-300">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid,
-              commodi doloremque, fugiat illum magni minus nisi nulla numquam
-              obcaecati placeat quia, repellat tempore voluptatum.
+              Vedark is a revolutionary cryptocurrency trading platform designed
+              to simplify and optimize your journey in the dynamic world of
+              crypto. We are a team of passionate crypto enthusiasts and
+              experienced developers dedicated to creating innovative tools that
+              empower users of all levels to achieve their crypto goals.
+              Vedark's user-friendly interface and powerful automation features
+              make it easy to set up and manage your trading strategies,
+              allowing you to trade crypto 24/7 with confidence and efficiency.
             </p>
           </div>
         </div>
       </div>
       <div className="mb-10">
-        <div className="text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            Empowering Businesses Globally
-          </h2>
-          <p className="mt-4 text-lg leading-8 text-slate-300">
-            Our platform is trusted by organizations worldwide to boost
-            productivity, streamline operations, and enhance customer
-            experiences.
-          </p>
-        </div>
+      <Heading
+              title="Results that Speak Volumes"
+              subtitle="A Snapshot of Vedark's Impact: How We're Empowering Crypto Traders"
+            />
         <dl className="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4">
           <div className="flex flex-col bg-slate-900 p-8">
             <dt className="text-sm font-semibold leading-6 text-slate-100">
               Active Users
             </dt>
             <dd className="order-first text-3xl font-semibold tracking-tight text-gradient">
-              12,345
+              89,345
             </dd>
           </div>
           <div className="flex flex-col bg-slate-900 p-8">
             <dt className="text-sm font-semibold leading-6 text-slate-100">
-              Transactions Today
+              Active Bots
             </dt>
             <dd className="order-first text-3xl font-semibold tracking-tight text-gradient">
-              1.23M
+              345,678
             </dd>
           </div>
           <div className="flex flex-col bg-slate-900 p-8">
             <dt className="text-sm font-semibold leading-6 text-slate-100">
-              Total Revenue
+              Trading Volume
             </dt>
             <dd className="order-first text-3xl font-semibold tracking-tight text-gradient">
               $5.6B

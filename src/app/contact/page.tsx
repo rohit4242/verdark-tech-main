@@ -13,8 +13,7 @@ const page: FC<pageProps> = ({}) => {
               Contact Us
             </h1>
             <p className="mt-2 text-4xl tracking-tight font-extrabold  text-white">
-              Whether it's just you, or your entire team - we've got you
-              covered.
+            Let's Talk Crypto
             </p>
             <div className="w-[22rem] md:w-[40rem] mx-auto h-2 mt-4 relative">
               {/* Gradients */}
@@ -27,7 +26,7 @@ const page: FC<pageProps> = ({}) => {
               <div className="absolute inset-0 w-full h-full bg-slate-950 [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
             </div>
             <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-slate-300">
-              Choose the product that works best
+            Share Your Questions or Feedback
             </p>
           </div>
 
@@ -91,9 +90,8 @@ const page: FC<pageProps> = ({}) => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl lg:max-w-4xl mx-auto text-center">
             <Heading
-              title="Visit Our Location"
-              subtitle="Got a technical issue? Want to send feedback about a beta feature?
-            Need details about our Business plan? Let us know."
+              title="Find Us Here"
+              subtitle="Your Gateway to Vedark Support"
             />
           </div>
           <div className="mt-16 lg:mt-20">

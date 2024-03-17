@@ -14,6 +14,11 @@ import cos_start from "../../public/assets/costomisable_strat.png";
 import IMG24 from "../../public/assets/24_7.png";
 import backtesting from "../../public/assets/back_test.png";
 import Powerfull_analytics from "../../public/assets/power_analytics.png";
+import simple from "../../public/assets/simple.webp"
+import secure from "../../public/assets/secure.webp"
+import fast from "../../public/assets/fast.webp"
+
+
 const AceternityLogo = () => {
   return (
     <svg
@@ -450,9 +455,9 @@ const content = [
     description:
       "Effortlessly navigate the crypto market with Vedark's user-friendly interface. Our intuitive design allows you to set up and manage your automated trading strategies with ease, even if you're new to crypto.",
     content: (
-      <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
-         <Image
-          src={Powerfull_analytics}
+      <div className="h-full w-full  flex items-center justify-right text-white">
+        <Image
+          src={simple}
           width={300}
           height={300}
           className="h-full w-full object-cover"
@@ -468,7 +473,7 @@ const content = [
     content: (
       <div className="h-full w-full  flex items-center justify-center text-white">
         <Image
-          src={Powerfull_analytics}
+          src={secure}
           width={300}
           height={300}
           className="h-full w-full object-cover"
@@ -482,8 +487,14 @@ const content = [
     description:
       "Don't let fleeting market moments slip away. Vedark boasts lightning-fast trade execution powered by sophisticated algorithms. These algorithms analyze market conditions in real-time, allowing Vedark to place and execute your trades with precision and unparalleled speed. This agility gives you a crucial edge in the dynamic crypto market, helping you capitalize on sudden price fluctuations and maximize your potential returns. With Vedark at the helm, you can trade with confidence, knowing your orders are executed swiftly and efficiently. ",
     content: (
-      <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
-        Version control
+      <div className="h-full w-full  flex items-center justify-center text-white">
+        <Image
+          src={fast}
+          width={300}
+          height={300}
+          className="h-full w-full object-cover"
+          alt="linear board demo"
+        />
       </div>
     ),
   },
