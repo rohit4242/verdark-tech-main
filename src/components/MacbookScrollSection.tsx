@@ -12,7 +12,7 @@ const MacbookScrollSection: FC<MacbookScrollProps> = ({}) => {
       <MacbookScroll
         title={
           <span>
-            This Macbook is built with Tailwindcss. <br /> No kidding.
+            Trading Made Easy: A Glimpse into <br />Vedark's Dashboard.
           </span>
         }
         badge={

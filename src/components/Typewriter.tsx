@@ -5,19 +5,22 @@ interface TypewriterProps {}
 
 const words = [
   {
-    text: "Build",
+    text: "Unleash",
   },
   {
-    text: "awesome",
+    text: "the",
   },
   {
-    text: "apps",
+    text: "automation",
   },
   {
-    text: "with",
+    text: "power",
   },
   {
-    text: "Aceternity.",
+    text: "of",
+  },
+  {
+    text: "Vedark.",
     className: "text-gradient",
   },
 ];
@@ -25,8 +28,8 @@ const words = [
 const Typewriter: FC<TypewriterProps> = ({}) => {
   return (
     <div className="flex flex-col bg-slate-900 md:w-full w-11/12 rounded-xl items-center justify-center h-[20rem] max-w-screen-xl mx-auto p-4  ">
-      <p className="text-neutral-200 text-xl   text-center">
-        The road to freedom starts from here
+      <p className="text-slate-300 text-center font-light sm:text-xl p-1.5">
+      Empower Your Crypto Journey
       </p>
       <TypewriterEffect words={words} />
       <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4">

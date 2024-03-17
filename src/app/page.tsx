@@ -451,7 +451,13 @@ const content = [
       "Effortlessly navigate the crypto market with Vedark's user-friendly interface. Our intuitive design allows you to set up and manage your automated trading strategies with ease, even if you're new to crypto.",
     content: (
       <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
-        Collaborative Editing
+         <Image
+          src={Powerfull_analytics}
+          width={300}
+          height={300}
+          className="h-full w-full object-cover"
+          alt="linear board demo"
+        />
       </div>
     ),
   },
