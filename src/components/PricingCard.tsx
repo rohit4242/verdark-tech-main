@@ -259,7 +259,7 @@ const PricingCard: FC<PricingCardProps> = ({}) => {
               </p>
               <p className="mt-6 flex items-baseline gap-x-1">
                 <span className="text-4xl font-bold tracking-tight text-white">
-                  € 199 / unit
+                  $ 199 / Month
                 </span>
                 <span className="text-sm font-semibold leading-6 text-gray-300"></span>
               </p>
