@@ -21,7 +21,7 @@ const BackgroundBeamsSection: FC<BackgroundBeamsSectionProps> = ({}) => {
   return (
     <div className="h-[20rem] md:h-[30rem] xl:h-[40rem] w-full max-w-screen-xl mx-auto rounded-md bg-slate-900 relative flex flex-col items-center justify-center antialiased">
       <div className="max-w-2xl mx-auto p-4">
-        <h1 className="relative z-10 text-3xl md:text-7xl text-gradient  bg-clip-text  text-center font-sans font-bold">
+        <h1 className="relative z-10 text-3xl md:text-7xl text-gradient bg-clip-text mt-10  text-center font-sans font-bold">
           Join Vedark Community
         </h1>
         <p></p>
@@ -40,9 +40,9 @@ const BackgroundBeamsSection: FC<BackgroundBeamsSectionProps> = ({}) => {
           required
         />
       </div>
-      <div className="flex relative flex-col md:flex-row space-y-4 z-10 md:space-y-0 space-x-0 md:space-x-4 mb-7">
+      <div className="flex relative flex-col md:flex-row space-y-4 z-10 md:space-y-0 space-x-0 md:space-x-4 mb-40">
         <button
-          className="border text-sm font-medium relative border-neutral-200 border-white/[0.2]  text-white px-6 py-4 rounded-full"
+          className="border text-sm font-medium relative border-neutral-200 border-white/[0.2] text-white px-6 py-4 rounded-full"
           onClick={handleJoinVedark}
         >
           Join Vedark

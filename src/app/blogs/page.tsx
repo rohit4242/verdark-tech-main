@@ -12,7 +12,7 @@ const page: FC<pageProps> = ({}) => {
           Blogs
         </h1>
         <p className="mt-2 text-4xl tracking-tight font-extrabold  text-white">
-          Whether it's just you, or your entire team - we've got you covered.
+         Explore our knowledge Base
         </p>
         <div className="w-[22rem] md:w-[40rem] mx-auto h-2 mt-4 relative">
           {/* Gradients */}
@@ -25,7 +25,7 @@ const page: FC<pageProps> = ({}) => {
           <div className="absolute inset-0 w-full h-full bg-slate-950 [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
         </div>
         <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-slate-300">
-          Choose the product that works best
+          We have curated information that you need to understand Vedark and Crypto Trading.
         </p>{" "}
       </div>
 
