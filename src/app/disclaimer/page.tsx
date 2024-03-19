@@ -101,7 +101,7 @@ const page: FC<pageProps> = ({}) => {
         <li>
           If you have previously agreed to us using your personal information
           for direct marketing purposes, you may change your mind at any time
-          by writing to or emailing us at [email protected]
+          by writing to or emailing us at vedarksouq@gmail.com
         </li>
         <li>
           We will not sell, distribute, or lease your personal information to
@@ -113,8 +113,7 @@ const page: FC<pageProps> = ({}) => {
         <li>
           You may request details of personal information which we hold about
           you. If you would like a copy of the information held on you, please
-          write to [Your Company Name, Address, City, State, Zip Code] or
-          email [email protected]
+          write to vedarksouq@gmail.com
         </li>
         <li>
           If you believe that any information we are holding on you is
