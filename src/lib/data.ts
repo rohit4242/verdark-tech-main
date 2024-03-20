@@ -259,6 +259,7 @@ export interface BlogPost {
   content: {
     title: string;
     intro: string;
+    image: string;
     strategies: {
       title: string;
       description: string;
