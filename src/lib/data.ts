@@ -1,3 +1,4 @@
+import { StaticImageData } from "next/image";
 import Blog_1 from "../../public/assets/blogs/blog_1.jpg";
 import Blog_2 from "../../public/assets/blogs/blog_2.jpg";
 import Blog_3 from "../../public/assets/blogs/blog_3.jpg";
@@ -259,7 +260,7 @@ export interface BlogPost {
   content: {
     title: string;
     intro: string;
-    image: string;
+    image: StaticImageData;
     strategies: {
       title: string;
       description: string;
