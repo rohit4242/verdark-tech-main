@@ -29,13 +29,13 @@ const BlogCard: FC<BlogCardProps> = ({ post }) => {
             {post.title}
           </CardItem>
 
-          <CardItem
+          {/* <CardItem
             as="p"
             translateZ="60"
             className=" text-sm max-w-sm mt-2 text-neutral-300"
           >
             {post.content.slice(0, 100)}...
-          </CardItem>
+          </CardItem> */}
           <CardItem translateZ="70" className="text-sm mt-2 text-neutral-400">
             Author: {post.author}
           </CardItem>

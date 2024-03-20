@@ -1,5 +1,4 @@
 import Blog from "@/components/Blog";
-import { TracingBeam } from "@/components/ui/tracing-beam";
 import { blogPosts } from "@/lib/data";
 import { FC } from "react";
 
@@ -22,27 +21,12 @@ const Page: FC<PageProps> = ({ params }) => {
   }
 
   return (
-    <TracingBeam>
-      <div className="container mx-auto px-4 py-8">
-        <div className=" rounded-lg shadow-md p-6">
-          <h2 className="text-2xl font-bold text-slate-200 mb-4">
-            {blogPost.title}
-          </h2>
-          <p className="text-slate-200 mb-4 h-screen">{blogPost.content}</p>
-          <p className="text-slate-200 mb-4 h-screen">{blogPost.content}</p>
-          <p className="text-slate-200 mb-4 h-screen">{blogPost.content}</p>
-          <p className="text-slate-200 mb-4 h-screen">{blogPost.content}</p>
-          <p className="text-slate-200 mb-4 h-screen">{blogPost.content}</p>
-          <p className="text-slate-200 mb-4 h-screen">{blogPost.content}</p>
-          <p className="text-slate-200 mb-4 h-screen">{blogPost.content}</p>
-
-          <div className="flex items-center">
-            <p className="text-slate-200 mr-4">Author: {blogPost.author}</p>
-            <p className="text-slate-200">Date: {blogPost.date}</p>
-          </div>
-        </div>
-      </div>
-    </TracingBeam>
+    <Blog
+      content={blogPost.content}
+      imageUrl={blogPost.content.image}
+      author={blogPost.author}
+      date={blogPost.date}
+    />
   );
 };
 
