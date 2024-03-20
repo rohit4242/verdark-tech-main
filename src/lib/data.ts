@@ -133,13 +133,13 @@ export const blogPosts = [
           title: "24/7 Market Coverage",
           description:
             "Unlike human traders who need sleep and breaks, automated bots can tirelessly monitor the market around the clock. This allows them to capitalize on fleeting opportunities and react to sudden price swings, even during off-hours.",
-          vedarkUsage: null,
+          vedarkUsage: '',
         },
         {
           title: "Emotionless Decision-Making",
           description:
             "Human emotions can cloud judgment and lead to impulsive trading decisions. Automated bots, on the other hand, execute trades based on pre-defined parameters and logic, removing the emotional factor from the equation.",
-          vedarkUsage: null,
+          vedarkUsage: '',
         },
         {
           title: "Backtesting and Optimization",
@@ -188,19 +188,19 @@ export const blogPosts = [
           title: "Understanding the Threat Landscape",
           description:
             "Cryptocurrency operates in a decentralized landscape, meaning there's no central authority like a bank to safeguard your funds. This necessitates taking responsibility for your own crypto security. Here are some common threats to be aware of: Phishing Attacks: Deceptive emails or websites impersonate legitimate platforms to trick users into revealing their login credentials or private keys. Malware: Malicious software can infect your device and steal your crypto wallet information. Exchange Hacks: Centralized cryptocurrency exchanges can be vulnerable to hacking attempts, potentially leading to theft of user funds.",
-          vedarkUsage: null,
+          vedarkUsage: '',
         },
         {
           title: "Building a Robust Defense",
           description:
             "Here are some essential security practices to safeguard your crypto assets: Strong Passwords and 2FA: Use unique, complex passwords for all your crypto accounts and enable two-factor authentication (2FA) wherever available. 2FA adds an extra layer of security by requiring a secondary verification code to log in, making unauthorized access significantly more difficult. Secure Your Devices: Keep your operating system and security software up to date. Utilize strong antivirus and anti-malware protection to guard against malicious software. Beware of Social Engineering: Don't click on suspicious links or download attachments from unknown senders. Be wary of unsolicited investment advice, especially through social media or email. Self-Custody vs. Exchange Wallets: Consider storing your cryptocurrency in a personal wallet that gives you complete control over your private keys. However, self-custody wallets require a higher level of technical expertise and personal responsibility.",
-          vedarkUsage: null,
+          vedarkUsage: '',
         },
         {
           title: "Vedark Prioritizes User Security",
           description:
             "While you should implement the security practices mentioned above, Vedark integrates several features to further enhance the security of your crypto assets: Advanced Encryption: Vedark utilizes robust encryption algorithms to protect your data, both in transit and at rest. This helps safeguard your login credentials and other sensitive information. API Key Permission Control: When connecting Vedark to a cryptocurrency exchange, you can grant it only the minimum permissions required to execute trades. This minimizes potential damage if your API key is compromised. Secure Login Measures: Vedark enforces strong password policies and offers additional login security measures like biometric authentication (fingerprint or facial recognition) where available. Regular Security Audits: Vedark undergoes regular security audits by reputable firms to identify and address any potential vulnerabilities in the platform's code.",
-          vedarkUsage: null,
+          vedarkUsage: '',
         },
       ],
       conclusion:
@@ -228,19 +228,19 @@ export const blogPosts = [
           title: "Sarah M., Marketing Managere",
           description:
             "Before Vedark, managing my crypto portfolio alongside my busy work schedule felt overwhelming. Now, Vedark's automation takes care of my trading strategy 24/7. I've seen a noticeable improvement in my returns, and the user-friendly interface makes it easy to monitor performance. Vedark has been a game-changer for my crypto journey!",
-          vedarkUsage: null,
+          vedarkUsage: '',
         },
         {
           title: "David L., Software Engineer",
           description:
             "I was initially skeptical of crypto trading bots, but Vedark truly impressed me. The backtesting feature allowed me to refine my strategy before going live, and the powerful analytics tools provide valuable insights into my performance. Vedark's security features are top-notch, giving me peace of mind while my trades are being executed automatically. Overall, Vedark has been a valuable addition to my crypto trading toolkit.",
-          vedarkUsage: null,
+          vedarkUsage: '',
         },
         {
           title: "Emily C., Entrepreneur",
           description:
             "As a crypto newbie, I found Vedark incredibly user-friendly and accessible. The simple setup process and intuitive design made it easy for me to get started with automated trading. The educational resources offered by Vedark have also been instrumental in helping me understand the crypto market better. Vedark has given me the confidence to participate in crypto trading and has definitely helped me achieve my initial investment goals. I'm excited to see what the future holds with Vedark as my crypto trading partner!",
-          vedarkUsage: null,
+          vedarkUsage: '',
         },
       ],
       conclusion:
@@ -256,7 +256,17 @@ export const blogPosts = [
 export interface BlogPost {
   id: number;
   title: string;
-  content: string;
+  content: {
+    title: string;
+    intro: string;
+    strategies: {
+      title: string;
+      description: string;
+      vedarkUsage?: string;
+    }[];
+    conclusion: string;
+    disclaimer: string;
+  };
   author: string;
   date: string;
 }
