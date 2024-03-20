@@ -115,7 +115,7 @@ const NavBar: FC<NavBarProps> = ({ className }) => {
               <li>
                 <a
                   href="/"
-                  className="block py-2 px-3  bg-blue-700 rounded md:bg-transparent  md:p-0 text-white md:text-gradient"
+                  className="block py-2 px-3  rounded  md:border-0  md:p-0 text-white md:hover:text-gradient hover:bg-gray-700 hover:text-gradient md:hover:bg-transparent"
                   aria-current="page"
                 >
                   Home
