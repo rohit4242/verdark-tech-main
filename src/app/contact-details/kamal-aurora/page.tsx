@@ -8,15 +8,15 @@ interface pageProps {}
 const page: FC<pageProps> = ({}) => {
   const handleSaveContact = () => {
     const vcard = `BEGIN:VCARD
-    VERSION:3.0
-    FN:Kamal Aurora
-    TITLE:Business Development Manager
-    TEL;TYPE=CELL:+971585861086
-    TEL;TYPE=WORK:+971585861086
-    EMAIL;TYPE=WORK:vedarksouq@gmail.com
-    URL;TYPE=Website:https://vedarktech.com
-    ADR;TYPE=WORK:;;1351, burjuman business tower, burjuman, bur Dubai;UAE
-    END:VCARD`;
+VERSION:3.0
+FN:Kamal Aurora
+TITLE:Business Development Manager
+TEL;TYPE=CELL:+971585861086
+TEL;TYPE=WORK:+971585861086
+EMAIL;TYPE=WORK:vedarksouq@gmail.com
+URL:https://vedarktech.com
+ADR;TYPE=WORK:;;1351\, burjuman business tower\, burjuman\, bur Dubai;UAE
+END:VCARD`;
 
     const blob = new Blob([vcard], { type: "text/vcard;charset=utf-8" });
     const url = window.URL.createObjectURL(blob);
