@@ -10,12 +10,13 @@ const page: FC<pageProps> = ({}) => {
     const vcard = `BEGIN:VCARD
     VERSION:3.0
     FN:Raju Kumar Singh
+    ORG:Vedarksouk LLC
     TITLE:Business Development Manager
     TEL;TYPE=CELL:+971508201569
     TEL;TYPE=WORK:+971508201569
     EMAIL;TYPE=WORK:vedarksouq@gmail.com
-    URL;TYPE=Website:https://vedarktech.com
-    ADR;TYPE=WORK:;;1351, burjuman business tower, burjuman, bur Dubai;UAE
+    URL:https://vedarktech.com
+    ADR;TYPE=WORK:;;1351\, burjuman business tower\, burjuman\, bur Dubai;UAE
     END:VCARD`;
 
     const blob = new Blob([vcard], { type: "text/vcard;charset=utf-8" });
