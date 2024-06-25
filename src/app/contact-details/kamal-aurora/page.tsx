@@ -10,7 +10,6 @@ const page: FC<pageProps> = ({}) => {
     const vcard = `BEGIN:VCARD
     VERSION:3.0
     FN:Kamal Aurora
-    ORG:Vedarksouk LLC
     TITLE:Business Development Manager
     TEL;TYPE=CELL:+971585861086
     TEL;TYPE=WORK:+971585861086
