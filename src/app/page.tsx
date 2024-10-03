@@ -3,16 +3,10 @@ import Card from "@/components/Card";
 import CardStackSection from "@/components/CardStackSection";
 import Heading from "@/components/Heading";
 import MacbookScrollSection from "@/components/MacbookScrollSection";
-import Hero from "@/components/hero";
+import Hero from "@/components/Hero";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
-import { LongTextGenerateEffect } from "@/components/ui/long-text-generate-effect";
-import { StickyScroll } from "@/components/ui/sticky-scroll-reveal";
 import Image from "next/image";
-import simple_set_up from "../../public/assets/simple-set-up.png";
-import secure_trading from "../../public/assets/secure_trading.png";
 import cos_start from "../../public/assets/costomisable_strat.png";
-import IMG24 from "../../public/assets/24_7.png";
-import backtesting from "../../public/assets/back_test.png";
 import Powerfull_analytics from "../../public/assets/power_analytics.png";
 import simple from "../../public/assets/simple.webp"
 import secure from "../../public/assets/secure.webp"
@@ -509,8 +503,6 @@ const content = [
   },
 ];
 
-const words = `Intrigued by automated crypto success? Scroll down to discover how Vedark can become your ultimate crypto trading partner.
-`;
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between md:p-10 p-4">
@@ -518,44 +510,18 @@ export default function Home() {
 
       <InfiniteMovingCards items={testimonials} direction="right" />
 
-      <LongTextGenerateEffect
-        words={words}
-        className="max-w-screen-xl mx-auto mb-16"
-      />
-
-      <StickyScroll content={content} />
-
       <Heading
         title="Unveiling the Power of Vedark"
         subtitle="Effortless, Secure, and Profitable Crypto Trading"
       />
 
       <div className="flex flex-wrap gap-8 justify-center max-w-screen-xl mx-auto w-full">
-        <Card
-          description="Get started effortlessly with Vedark's intuitive interface. No coding required!"
-          image={simple_set_up}
-          title="Simple Setup"
-        />
-        <Card
-          description="Vedark prioritizes security with features like AES-256 and API key permissions"
-          image={secure_trading}
-          title="Secure Trading"
-        />
+    
         <Card
           description="Build personalized trading strategies or choose from pre-built templates."
           image={cos_start}
           title="Customizable Strategies"
-        />
-        <Card
-          description="Vedark works around the clock, so you don't miss any opportunity."
-          image={IMG24}
-          title="24/7 Automation"
-        />
-        <Card
-          description="Test your strategies before going live. Optimize IT for maximum gains."
-          image={backtesting}
-          title="Backtesting Made Easy"
-        />
+        /> 
         <Card
           description="Gain insights into your performance and make informed decisions."
           image={Powerfull_analytics}

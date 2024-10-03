@@ -4,28 +4,11 @@ interface pageProps {}
 
 const page: FC<pageProps> = ({}) => {
   return (
-    <div className="bg-slate-950 text-white max-w-screen-xl mx-auto p-4">
+    <div className="bg-neutral-950 text-white max-w-screen-xl mx-auto p-4">
       <div className="mx-auto max-w-4xl text-center mt-16">
-        <h1 className=" text-lg font-semibold leading-7 text-gradient">
-          About Us
-        </h1>
         <p className="mt-2 text-4xl tracking-tight font-extrabold  text-white">
           Your Trusted Partner in Automated Crypto Trading
         </p>
-        <div className="w-[22rem] md:w-[40rem] mx-auto h-2 mt-4 relative">
-          {/* Gradients */}
-          <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
-          <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
-          <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-1/4 blur-sm" />
-          <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4" />
-
-          {/* Radial Gradient to prevent sharp edges */}
-          <div className="absolute inset-0 w-full h-full bg-slate-950 [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
-        </div>
-        <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-slate-300">
-          Automate your crypto trading with confidence. Vedark is your reliable
-          partner for success.
-        </p>{" "}
       </div>
       <div className="sm:flex items-center max-w-screen-xl">
         <div className="sm:w-1/2 p-10">
