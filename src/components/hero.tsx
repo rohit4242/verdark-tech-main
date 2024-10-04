@@ -11,7 +11,7 @@ interface Hero { }
 const Hero: FC<Hero> = ({ }) => {
   return (
     <>
-      <section className="space-y-6 w-full pb-12 pt-16 ">
+      <section className="space-y-6 pb-12 pt-16 lg:py-12">
         <div className="container flex max-w-[64rem] flex-col items-center gap-5 text-center">
           <div
             className="flex justify-center space-x-2 md:space-x-4"
@@ -145,7 +145,7 @@ const Hero: FC<Hero> = ({ }) => {
           />
         </div>
       </section>
-      <section className="w- py-12 bg-gray-800 md:py-24 lg:py-24 xl:py-24">
+      <section className="w-full py-12 bg-gray-800 md:py-24 lg:py-24 xl:py-24">
         <div className="container flex flex-col items-center justify-center space-y-4 px-4 md:flex-row md:space-y-0 md:px-6 lg:space-x-12 lg:px-12 xl:space-x-16">
           <div className="grid items-center gap-6 lg:grid-cols-[1fr_500px] lg:gap-12 xl:grid-cols-[1fr_550px]">
             <Link
@@ -190,7 +190,19 @@ const Hero: FC<Hero> = ({ }) => {
       <section className="w-full  py-12 bg-gray-800 md:py-24 lg:py-24 xl:py-24">
         <div className="container flex flex-col items-center justify-center space-y-4 px-4 md:flex-row md:space-y-0 md:px-6 lg:space-x-12 lg:px-12 xl:space-x-16">
           <div className="grid items-center gap-6 lg:grid-cols-[1fr_500px] lg:gap-12 xl:grid-cols-[1fr_550px]">
-             <div className="flex flex-col justify-center space-y-4">
+            <Link
+              href=""
+              target="_blank"
+            >
+              <img
+                alt="Image"
+                className="mx-auto overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
+                height="310"
+                src="/images/pinocchio-leaderboard.png"
+                width="500"
+              />
+            </Link>
+            <div className="flex flex-col justify-center space-y-4">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter text-white sm:text-5xl">
                   Pinocchio ITA leaderboard
@@ -200,7 +212,7 @@ const Hero: FC<Hero> = ({ }) => {
                   foreign language and culture for Italian finetuned LLMs
                 </p>
               </div>
-              <div className="flex flex-col gap-2 min-[500px]:flex-row">
+              <div className="flex flex-col gap-2 min-[400px]:flex-row">
                 <Link
                   href="https://huggingface.co/spaces/mii-llm/pinocchio-ita-leaderboard"
                   className={cn(
@@ -213,19 +225,6 @@ const Hero: FC<Hero> = ({ }) => {
                 </Link>
               </div>
             </div>
-            <Link
-              href="https://huggingface.co/spaces/mii-llm/pinocchio-ita-leaderboard"
-              target="_blank"
-            >
-              <img
-                alt="Image"
-                className="mx-auto overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
-                height="310"
-                src="/images/pinocchio-leaderboard.png"
-                width="500"
-              />
-            </Link>
-           
           </div>
         </div>
       </section>
