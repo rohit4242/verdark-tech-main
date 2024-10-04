@@ -71,7 +71,7 @@ const PricingCard: FC<PricingCardProps> = ({}) => {
               <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4" />
 
               {/* Radial Gradient to prevent sharp edges */}
-              <div className="absolute inset-0 w-full h-full bg-slate-950 [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
+              <div className="absolute inset-0 w-full h-full bg-neutral-950 [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
             </div>
             <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-slate-300">
             Choose the Right Powerhouse for Your Crypto Journey
@@ -166,7 +166,7 @@ const PricingCard: FC<PricingCardProps> = ({}) => {
                 >
                   Pro
                 </h2>
-                <p className="rounded-full bg-slate-950 border-2 border-slate-600 px-2.5 py-1 text-xs font-semibold leading-5 text-white">
+                <p className="rounded-full bg-neutral-950 border-2 border-slate-600 px-2.5 py-1 text-xs font-semibold leading-5 text-white">
                   Most popular
                 </p>
               </div>
@@ -183,7 +183,7 @@ const PricingCard: FC<PricingCardProps> = ({}) => {
                 <DialogTrigger asChild>
                   <ButtonForFun
                     borderRadius="1.75rem"
-                    className="bg-slate-900 text-white border-slate-800 w-full"
+                    className="bg-neutral-900 text-white border-slate-800 w-full"
                   >
                     {" "}
                     Order now{" "}
@@ -325,7 +325,7 @@ const PricingCard: FC<PricingCardProps> = ({}) => {
             </div>
           </div>
         </div>
-        <DialogContent className="sm:max-w-[425px] bg-slate-950 border-slate-600 text-white">
+        <DialogContent className="sm:max-w-[425px] bg-neutral-950 border-slate-600 text-white">
           <DialogHeader>
             <DialogTitle>Place Order</DialogTitle>
             <DialogDescription>

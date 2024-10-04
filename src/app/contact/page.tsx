@@ -23,7 +23,7 @@ const page: FC<pageProps> = ({}) => {
               <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4" />
 
               {/* Radial Gradient to prevent sharp edges */}
-              <div className="absolute inset-0 w-full h-full bg-slate-950 [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
+              <div className="absolute inset-0 w-full h-full bg-neutral-950 [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
             </div>
             <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-slate-300">
             Share Your Questions or Feedback
@@ -86,7 +86,7 @@ const page: FC<pageProps> = ({}) => {
         </div>
       </section>
 
-      <section className="bg-slate-950">
+      <section className="bg-neutral-950">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl lg:max-w-4xl mx-auto text-center">
             <Heading
