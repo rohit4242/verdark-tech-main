@@ -3,15 +3,15 @@ import Card from "@/components/Card";
 import CardStackSection from "@/components/CardStackSection";
 import Heading from "@/components/Heading";
 import MacbookScrollSection from "@/components/MacbookScrollSection";
-import Hero from "@/components/Hero";
+import Hero from "@/components/hero";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 import Image from "next/image";
 import cos_start from "../../public/assets/costomisable_strat.png";
 import Powerfull_analytics from "../../public/assets/power_analytics.png";
-import simple from "../../public/assets/simple.webp"
-import secure from "../../public/assets/secure.webp"
-import fast from "../../public/assets/fast.webp"
-
+import simple from "../../public/assets/simple.webp";
+import { CardHoverEffectDemo } from "@/components/CardHoverEffectDemo";
+import secure from "../../public/assets/secure.webp";
+import fast from "../../public/assets/fast.webp";
 
 const AceternityLogo = () => {
   return (
@@ -516,12 +516,11 @@ export default function Home() {
       />
 
       <div className="flex flex-wrap gap-8 justify-center max-w-screen-xl mx-auto w-full">
-    
         <Card
           description="Build personalized trading strategies or choose from pre-built templates."
           image={cos_start}
           title="Customizable Strategies"
-        /> 
+        />
         <Card
           description="Gain insights into your performance and make informed decisions."
           image={Powerfull_analytics}
@@ -533,7 +532,7 @@ export default function Home() {
       <MacbookScrollSection />
 
       <InfiniteMovingCards items={testimonials1} direction="right" />
-
+      <CardHoverEffectDemo />
       <BackgroundBeamsSection />
       <Heading
         title="Still Not Convinced?"
