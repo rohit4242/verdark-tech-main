@@ -38,7 +38,7 @@ export function MainNav({ items, children }: MainNavProps) {
   }, [showMobileMenu]);
 
   return (
-    <div className="flex gap-6 md:gap-10 w-full justify-between items-center">
+    <div className="flex w-full justify-between items-center">
       <Link href="/" className="hidden items-center space-x-2 md:flex">
         <span className="hidden font-urban text-xl font-bold sm:inline-block w-32">
           <Image
@@ -69,7 +69,7 @@ export function MainNav({ items, children }: MainNavProps) {
           ))}
         </nav>
       ) : null}
-      <div className="flex justify-between items-center w-full md:w-auto">
+      <div className="md:hidden flex justify-between items-center w-full md:w-auto">
         <div className="md:hidden w-8">
           <button onClick={toggleMobileMenu}>
             {showMobileMenu ? <X /> : <AlignJustify />}

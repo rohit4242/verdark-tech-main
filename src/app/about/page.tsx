@@ -10,9 +10,7 @@ const page: FC<pageProps> = ({}) => {
     <>
       <div className="bg-neutral-950 text-white max-w-screen-xl mx-auto ">
         <div className="mx-auto max-w-4xl text-center mt-16">
-          <p className="mt-2 text-4xl tracking-tight font-extrabold  text-white">
-            Your Trusted Partner in Automated Crypto Trading
-          </p>
+          <Heading title="Driving Innovation with AI" />
         </div>
         <div className="sm:flex items-center max-w-screen-xl">
           <div className="sm:w-1/2 p-10">
@@ -23,61 +21,61 @@ const page: FC<pageProps> = ({}) => {
           <div className="sm:w-1/2 p-5">
             <div className="text">
               <span className="text-gray-300 uppercase">
-                Effortless & Intelligent
+                Intelligent & Custom Solutions
               </span>
-              <h2 className="my-4 font-bold text-3xl  sm:text-4xl ">
-                <span className="bg-gradient-to-r from-indigo-500 to-purple-500/80 bg-clip-text text-transparent">Empowering</span> Crypto Success
+              <h2 className="my-4 font-bold text-3xl sm:text-4xl">
+                <span className="bg-gradient-to-r from-indigo-500 to-purple-500/80 bg-clip-text text-transparent">
+                  Empowering
+                </span>{" "}
+                Business Growth
               </h2>
               <p className="text-slate-300">
-                Vedark is a revolutionary cryptocurrency trading platform
-                designed to simplify and optimize your journey in the dynamic
-                world of crypto. We are a team of passionate crypto enthusiasts
-                and experienced developers dedicated to creating innovative
-                tools that empower users of all levels to achieve their crypto
-                goals. Vedark's user-friendly interface and powerful automation
-                features make it easy to set up and manage your trading
-                strategies, allowing you to trade crypto 24/7 with confidence
-                and efficiency.
+                Vedark is a pioneering platform for custom AI solutions designed
+                to enhance your business operations in an ever-evolving digital
+                landscape. Our team of skilled AI developers and industry
+                experts is committed to creating intelligent tools that empower
+                organizations to achieve their unique goals. With Vedark's
+                tailored AI agents and automation features, businesses can
+                streamline processes, boost efficiency, and foster innovation,
+                all while confidently navigating the challenges of the digital
+                age.
               </p>
             </div>
           </div>
         </div>
         <div className="mb-10">
-          <Heading
-            title="Results that Speak Volumes"
-            subtitle="A Snapshot of Vedark's Impact: How We're Empowering Crypto Traders"
-          />
+          <Heading title="Results that Speak Volumes" />
           <dl className="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4">
             <div className="flex flex-col bg-black p-8">
               <dt className="text-sm font-semibold leading-6 text-slate-100">
-                Active Users
+                Active Clients
               </dt>
               <dd className="order-first text-3xl font-semibold tracking-tight bg-gradient-to-r from-indigo-500 to-purple-500/80 bg-clip-text text-transparent">
-                89,345
+                120,456
               </dd>
             </div>
             <div className="flex flex-col bg-black p-8">
               <dt className="text-sm font-semibold leading-6 text-slate-100">
-                Active Bots
+                AI Solutions Deployed
               </dt>
               <dd className="order-first text-3xl font-semibold tracking-tight bg-gradient-to-r from-indigo-500 to-purple-500/80 bg-clip-text text-transparent">
-                345,678
+                789,234
               </dd>
             </div>
             <div className="flex flex-col bg-black p-8">
               <dt className="text-sm font-semibold leading-6 text-slate-100">
-                Estimate Saving
+                Estimated Revenue Growth
               </dt>
               <dd className="order-first text-3xl font-semibold tracking-tight bg-gradient-to-r from-indigo-500 to-purple-500/80 bg-clip-text text-transparent">
-                $5.6B
+                $3.2B
               </dd>
             </div>
             <div className="flex flex-col bg-black p-8">
               <dt className="text-sm font-semibold leading-6 text-slate-100">
-                Happy Customers
+                Customer Satisfaction
               </dt>
               <dd className="order-first text-3xl font-semibold tracking-tight bg-gradient-to-r from-indigo-500 to-purple-500/80 bg-clip-text text-transparent">
-                98%
+                95%
               </dd>
             </div>
           </dl>

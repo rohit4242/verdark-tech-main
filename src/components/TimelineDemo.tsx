@@ -9,9 +9,19 @@ export function TimelineDemo() {
       content: (
         <div>
           <p className="text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            Built and launched Aceternity UI and Aceternity UI Pro from scratch
+            Introduced innovative machine learning solutions that empower businesses to leverage data-driven insights, enhancing decision-making processes and operational efficiency.
           </p>
-          
+          <div className="mb-8">
+            <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
+              ✅ Enhanced user experience through real-time analytics
+            </div>
+            <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
+              ✅ Integrated advanced security protocols for user data protection
+            </div>
+            <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
+              ✅ Implemented machine learning algorithms for predictive analytics
+            </div>
+          </div>
         </div>
       ),
     },
@@ -20,49 +30,61 @@ export function TimelineDemo() {
       content: (
         <div>
           <p className="text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            I usually run out of copy, but when I see content this big, I try to
-            integrate lorem ipsum.
+            Expanded our focus to developing sophisticated AI trading bots that leverage data analytics for optimized trading decisions, significantly improving client performance.
           </p>
           <p className="text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            Lorem ipsum is for people who are too lazy to write copy. But we are
-            not. Here are some more example of beautiful designs I built.
+            Launched new features that allow users to customize trading strategies, ensuring greater flexibility and adaptability in the ever-changing market landscape.
           </p>
-         
+          <div className="mb-8">
+            <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
+              ✅ Launched a beta version of our trading bots
+            </div>
+            <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
+              ✅ Gathered valuable user feedback to enhance functionality
+            </div>
+            <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
+              ✅ Increased accuracy of trading predictions through AI integration
+            </div>
+          </div>
         </div>
       ),
     },
     {
-      title: "Changelog",
+      title: "Founded in 2022",
       content: (
         <div>
           <p className="text-neutral-200 text-xs md:text-sm font-normal mb-4">
-            Deployed 5 new components on Aceternity today
+            We started our journey as a dedicated AI company, focusing on creating innovative solutions in various fields, including image processing and automation.
           </p>
           <div className="mb-8">
             <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
-              ✅ Card grid component
+              ✅ Developed cutting-edge AI image models that enhanced visual data interpretation
             </div>
             <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
-              ✅ Startup template Aceternity
+              ✅ Established a solid foundation for future innovations in AI technologies
             </div>
             <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
-              ✅ Random file upload lol
+              ✅ Collaborated with industry leaders to refine our AI offerings
             </div>
             <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
-              ✅ Himesh Reshammiya Music CD
+              ✅ Initiated research projects to explore new AI applications
             </div>
             <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
-              ✅ Salman Bhai Fan Club registrations open
+              ✅ Focused on sustainable AI practices for ethical technology development
+            </div>
+            <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
+              ✅ Received recognition for innovation in AI solutions
             </div>
           </div>
-         
         </div>
       ),
     },
   ];
+
   return (
     <div className="w-full">
       <Timeline data={data} />
     </div>
   );
 }
+

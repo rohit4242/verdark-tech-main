@@ -39,11 +39,12 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
       ref={containerRef}
     >
       <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
-        <Heading title="Changelog from my journey" />
+        <Heading title="Vedark's Evolution" />
 
         <p className="text-neutral-300 text-sm md:text-base max-w-sm">
-          I&apos;ve been working on Aceternity for the past 2 years. Here&apos;s
-          a timeline of my journey.
+          At Vedark, we have been dedicated to advancing AI technology and
+          innovation since our inception. Here&apos;s a timeline showcasing our
+          milestones and the impactful strides we&apos;ve made in the AI landscape.
         </p>
       </div>
 

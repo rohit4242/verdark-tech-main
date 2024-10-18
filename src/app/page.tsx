@@ -6,9 +6,8 @@ import { BackgroundBeamsWithCollisionDemo } from "@/components/BackgroundBeamsWi
 
 export default function Home() {
   return (
-    <main className="min-h-screen max-w-screen-xl mx-auto bg-neutral-950">
+    <main className="min-h-screen  bg-neutral-950">
       <Hero />
-      
 
       <TimelineDemo />
       <MacbookScrollSection />

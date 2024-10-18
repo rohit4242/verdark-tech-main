@@ -12,7 +12,7 @@ const MacbookScrollSection: FC<MacbookScrollProps> = ({}) => {
       <MacbookScroll
         title={
           <span>
-            Trading Made Easy: A Glimpse into <br />Vedark's Dashboard.
+            Seamless Interaction: Discover Our Bot in Action
           </span>
         }
         badge={

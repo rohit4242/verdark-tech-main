@@ -6,7 +6,7 @@ import Heading from "./Heading";
 
 export function InfiniteMovingCardsDemo() {
   return (
-    <div className="h-[40rem] rounded-md  flex flex-col antialiased bg-neutral-950 dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+    <div className="h-[40rem] rounded-md max-w-screen-xl mx-auto  flex flex-col antialiased bg-neutral-950 dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
       <Heading title="Testimonials" />
 
       <InfiniteMovingCards
@@ -21,31 +21,32 @@ export function InfiniteMovingCardsDemo() {
 const testimonials = [
   {
     quote:
-      "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
-    name: "Charles Dickens",
-    title: "A Tale of Two Cities",
+      "Vedark's AI solutions have transformed our customer service experience, allowing us to engage with clients like never before.",
+    name: "Emily Johnson",
+    title: "CEO, Tech Innovations Inc.",
   },
   {
     quote:
-      "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
-    name: "William Shakespeare",
-    title: "Hamlet",
-  },
-  {
-    quote: "All that we see or seem is but a dream within a dream.",
-    name: "Edgar Allan Poe",
-    title: "A Dream Within a Dream",
+      "The custom chatbot developed by Vedark has streamlined our operations and significantly improved our efficiency.",
+    name: "Michael Smith",
+    title: "Operations Manager, Retail Solutions",
   },
   {
     quote:
-      "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
-    name: "Jane Austen",
-    title: "Pride and Prejudice",
+      "Thanks to Vedark's AI consultation, we were able to harness data insights that drove our business strategy forward.",
+    name: "Sarah Lee",
+    title: "Director of Strategy, Future Enterprises",
   },
   {
     quote:
-      "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
-    name: "Herman Melville",
-    title: "Moby-Dick",
+      "Our partnership with Vedark has empowered our team to embrace innovation and improve our service delivery.",
+    name: "David Brown",
+    title: "CTO, Digital Services Co.",
+  },
+  {
+    quote:
+      "The integration of Vedark's AI agents has made a remarkable difference in our workflow and customer interactions.",
+    name: "Laura Wilson",
+    title: "Product Manager, Smart Tech Corp.",
   },
 ];

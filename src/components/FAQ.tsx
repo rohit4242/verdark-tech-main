@@ -14,7 +14,7 @@ const FAQ: FC<FAQProps> = ({}) => {
     <>
       <Heading
         title="FAQ"
-        subtitle="Navigating Your Crypto Journey with Vedark"
+        subtitle="Navigating Your AI Solutions with Vedark"
       />
       <Accordion
         type="single"
@@ -23,42 +23,32 @@ const FAQ: FC<FAQProps> = ({}) => {
       >
         <AccordionItem value="item-1">
           <AccordionTrigger>
-            Is there a minimum investment required to use Vedark?
+            Is there a minimum requirement to use Vedark's services?
           </AccordionTrigger>
           <AccordionContent>
-            The minimum investment required depends on the cryptocurrency you
-            choose to trade and the specific exchange you connect Vedark to.
-            However, many exchanges allow for relatively small initial
-            investments. We recommend checking your chosen exchange's minimum
-            deposit requirements.
+            There are no strict minimum requirements to utilize Vedark's services. Our solutions are designed to cater to businesses of all sizes, from startups to large enterprises, enabling everyone to leverage AI technology.
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-2">
           <AccordionTrigger>
-            Can I backtest my own trading strategies with Vedark?
+            Can I customize the AI agents developed by Vedark?
           </AccordionTrigger>
           <AccordionContent>
-            Yes! Vedark offers backtesting capabilities, allowing you to test
-            your strategies on historical market data before deploying them with
-            real funds. This helps you refine your approach and gain confidence
-            before going live.
+            Absolutely! Vedark offers fully customizable AI agents tailored to meet your specific business needs. You can work closely with our team to design features and functionalities that align with your goals.
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-3">
           <AccordionTrigger>
-            Do I need any coding experience to use Vedark?
+            Do I need technical expertise to integrate Vedark's solutions?
           </AccordionTrigger>
           <AccordionContent>
-            No prior coding experience is necessary to use Vedark effectively.
-            Our user-friendly interface is designed for both beginners and
-            experienced traders. You can choose from pre-built trading
-            strategies or customize them to your preferences without writing any
-            code.
+            No technical expertise is required to integrate Vedark's solutions. Our user-friendly interface and dedicated support team are here to assist you throughout the process, making it seamless for businesses of all backgrounds.
           </AccordionContent>
         </AccordionItem>
       </Accordion>
     </>
   );
 };
+
 
 export default FAQ;

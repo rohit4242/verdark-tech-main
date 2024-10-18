@@ -9,33 +9,33 @@ export function CardHoverEffectDemo() {
 }
 export const projects = [
   {
-    title: "Stripe",
+    title: "Custom AI Agents",
     description:
-      "A technology company that builds economic infrastructure for the internet.",
+      "Tailored AI solutions designed to meet your unique business needs and drive innovation.",
   },
   {
-    title: "Netflix",
+    title: "Process Automation",
     description:
-      "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
+      "Intelligent AI-powered systems to streamline your business processes and boost operational efficiency.",
   },
   {
-    title: "Google",
+    title: "Chatbot Development",
     description:
-      "A multinational technology company that specializes in Internet-related services and products.",
+      "Advanced conversational AI agents to enhance customer service and user engagement across platforms.",
   },
   {
-    title: "Meta",
+    title: "AI Consultation",
     description:
-      "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
+      "Expert guidance on integrating AI solutions to solve complex business challenges and drive growth.",
   },
   {
-    title: "Amazon",
+    title: "Data Analysis & Insights",
     description:
-      "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
+      "AI-driven data analysis tools to extract valuable insights and inform strategic decision-making.",
   },
   {
-    title: "Microsoft",
+    title: "AI Integration Services",
     description:
-      "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
+      "Seamless integration of AI agents into your existing systems and workflows for maximum impact.",
   },
 ];

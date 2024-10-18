@@ -97,47 +97,25 @@ const Hero: FC<Hero> = ({}) => {
         <div className="container flex flex-col items-center justify-center space-y-4 px-4 md:flex-row md:space-y-0 md:px-6 lg:space-x-12 lg:px-12 xl:space-x-16">
           <div className="space-y-3 ">
             <h1 className="text-4xl font-bold text-white tracking-tighter sm:text-5xl md:text-6xl/none">
-              Maestrale
+              About Vedark Tech
             </h1>
             <p className="mx-auto max-w-[600px] text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Is a 7 billion{" "}
-              <Link
-                className="text-blue-600 underline visited:text-purple-600 hover:text-blue-800"
-                href="https://huggingface.co/mii-llm/maestrale-chat-v0.4-beta"
-                target="_blank"
-              >
-                open source
-              </Link>{" "}
-              model fine tuned for producing good Italian both semantically and
-              syntatically. Maestrale is able to integrate with tools via json
-              and API calls and has reasoning capabilities.{" "}
-              <Link
-                className="text-blue-600 underline visited:text-purple-600 hover:text-blue-800"
-                href="https://huggingface.co/spaces/FinancialSupport/open_ita_llm_leaderboard"
-                target="_blank"
-              >
-                It is one of the best Italian
-              </Link>{" "}
-              open source models and all anonymized conversations will be
-              published as{" "}
-              <Link
-                className="text-blue-600 underline visited:text-purple-600 hover:text-blue-800"
-                href="https://huggingface.co/mii-llm"
-                target="_blank"
-              >
-                open source datasets
-              </Link>
-              .
+              At Vedark Tech, we specialize in creating intelligent, custom AI
+              agents tailored to meet the unique needs of businesses across
+              various industries. Our innovative solutions are designed to
+              streamline processes, boost efficiency, and drive innovation,
+              empowering organizations to thrive in the rapidly evolving digital
+              landscape.
             </p>
 
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
               <Link
-                href="/agents/maestrale"
+                href="/about"
                 className={cn(
                   buttonVariants({ variant: "outline", size: "lg" })
                 )}
               >
-                Chat with Maestrale
+                Learn More About Us
               </Link>
             </div>
           </div>
@@ -150,10 +128,7 @@ const Hero: FC<Hero> = ({}) => {
           />
         </div>
       </section>
-      <Heading
-        title="Unveiling the Power of Vedark"
-        subtitle="Effortless, Secure, and Profitable Crypto Trading"
-      />
+      <Heading title="AI for Your Business" />
       <CardHoverEffectDemo />
 
       <section className="w-full pb-4 pt-20 bg-gray-800 md:pt-24 lg:pt-32 xl:pt-32">
@@ -171,24 +146,24 @@ const Hero: FC<Hero> = ({}) => {
             <div className="flex flex-col justify-center space-y-4">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter text-white sm:text-5xl">
-                  Italian LLMs leaderboard
+                  Vedark AI Dashboard
                 </h2>
                 <p className="max-w-[600px] text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  The ranking of the open source Italian LLMs on reproducible
-                  evaluation benchmarks as mmlu_it, arc_c_it, hellaswag_it and
-                  others.
+                  Experience the power of our custom AI agents through our
+                  interactive dashboard. Monitor performance, track efficiency
+                  gains, and witness real-time business impact.
                 </p>
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
                 <Link
-                  href={""}
+                  href={"/contact"}
                   className={cn(
                     buttonVariants({ variant: "outline", size: "lg" })
                   )}
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Go to the leaderboard
+                  Get A Quote
                 </Link>
               </div>
             </div>
@@ -196,35 +171,32 @@ const Hero: FC<Hero> = ({}) => {
         </div>
       </section>
       <section className="w-full py-12 bg-gray-800 md:py-24 lg:py-24 xl:py-24">
-        <div className="container flex flex-col items-center justify-center space-y-4 px-4 md:flex-row md:space-y-0 md:px-6 lg:space-x-12 lg:px-12 xl:space-x-16">
-          <div className="grid items-center gap-6 lg:grid-cols-[500px_1fr] lg:gap-12 xl:grid-cols-[550px_1fr]">
-            {/* Text Content */}
-            <div className="flex flex-col justify-center space-y-4">
-              <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter text-white sm:text-5xl">
-                  Pinocchio ITA leaderboard
-                </h2>
-                <p className="max-w-[600px] text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Specialized benchmarks on specific topics as logic, math, law,
-                  foreign language and culture for Italian finetuned LLMs
-                </p>
-              </div>
-            </div>
-
-            {/* Image */}
-            <div>
-              <img
-                alt="Image"
-                className="mx-auto overflow-hidden rounded-xl object-cover object-center sm:w-full"
-                height="310"
-                src="/images/pinocchio-leaderboard.png"
-                width="500"
-              />
-            </div>
-          </div>
+  <div className="container flex flex-col items-center justify-center space-y-4 px-4 md:flex-row md:space-y-0 md:px-6 lg:space-x-12 lg:px-12 xl:space-x-16">
+    <div className="grid items-center gap-6 lg:grid-cols-[500px_1fr] lg:gap-12 xl:grid-cols-[550px_1fr]">
+      
+      <div className="flex flex-col justify-center space-y-4">
+        <div className="space-y-2">
+          <h2 className="text-3xl font-bold tracking-tighter text-white sm:text-5xl">
+            Our Commitment to Innovation
+          </h2>
+          <p className="max-w-[600px] text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+            At Vedark, our loyalty lies in delivering intelligent, custom AI solutions that empower businesses and drive innovation in the digital landscape.
+          </p>
         </div>
-      </section>
-     
+      </div>
+
+      <div>
+        <img
+          alt="Mascot Image"
+          className="mx-auto overflow-hidden rounded-xl object-cover object-center sm:w-full"
+          height="310"
+          src="/images/pinocchio-leaderboard.png"
+          width="500"
+        />
+      </div>
+    </div>
+  </div>
+</section>
     </>
   );
 };

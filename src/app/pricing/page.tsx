@@ -12,7 +12,7 @@ const page: FC<pageProps> = ({}) => {
       <PricingCard />
       <div className="mb-24">
         <FAQ />
-        <Heading title="Anything" />
+        <Heading title="AI for Your Business" />
         <CardHoverEffectDemo />
         <BackgroundBeamsWithCollisionDemo />
       </div>
