@@ -1,46 +1,53 @@
-"use client"
+"use client";
 
-import * as React from "react"
-import Link from "next/link"
-import { useSelectedLayoutSegment } from "next/navigation"
+import * as React from "react";
+import Link from "next/link";
+import { useSelectedLayoutSegment } from "next/navigation";
 
-import { cn } from "@/lib/utils"
-import { MainNavItem } from "@/types"
-import { HomeIcon, SidebarCloseIcon } from "lucide-react"
-import { MobileNav } from "./MobileNav"
+import { cn } from "@/lib/utils";
+import { MainNavItem } from "@/types";
+import { HomeIcon, SidebarCloseIcon } from "lucide-react";
+import { MobileNav } from "./MobileNav";
+import Image from "next/image";
 
 interface MainNavProps {
-  items?: MainNavItem[]
-  children?: React.ReactNode
+  items?: MainNavItem[];
+  children?: React.ReactNode;
 }
 
 export function MainNav({ items, children }: MainNavProps) {
-  const segment = useSelectedLayoutSegment()
-  const [showMobileMenu, setShowMobileMenu] = React.useState<boolean>(false)
+  const segment = useSelectedLayoutSegment();
+  const [showMobileMenu, setShowMobileMenu] = React.useState<boolean>(false);
 
   const toggleMobileMenu = () => {
-    setShowMobileMenu(!showMobileMenu)
-  }
+    setShowMobileMenu(!showMobileMenu);
+  };
 
   React.useEffect(() => {
     const closeMobileMenuOnClickOutside = (event: MouseEvent) => {
       if (showMobileMenu) {
-        setShowMobileMenu(false)
+        setShowMobileMenu(false);
       }
-    }
+    };
 
-    document.addEventListener("click", closeMobileMenuOnClickOutside)
+    document.addEventListener("click", closeMobileMenuOnClickOutside);
 
     return () => {
-      document.removeEventListener("click", closeMobileMenuOnClickOutside)
-    }
-  }, [showMobileMenu])
+      document.removeEventListener("click", closeMobileMenuOnClickOutside);
+    };
+  }, [showMobileMenu]);
 
   return (
-    <div className="flex gap-6 md:gap-10">
+    <div className="flex gap-6 md:gap-10 ">
       <Link href="/" className="hidden items-center space-x-2 md:flex">
-        <HomeIcon />
-        <span className="hidden font-urban text-xl font-bold sm:inline-block">Company Name 
+        <span className="hidden font-urban text-xl font-bold sm:inline-block w-32">
+          <Image
+            src={"/assets/vedark-logo.png"}
+            className=" w-full"
+            width={100}
+            height={100}
+            alt={"logo"}
+          />
         </span>
       </Link>
       {items?.length ? (
@@ -50,10 +57,10 @@ export function MainNav({ items, children }: MainNavProps) {
               key={index}
               href={item.disabled ? "#" : item.href}
               className={cn(
-                "flex items-center text-lg font-medium transition-colors hover:text-foreground/80 sm:text-sm",
+                "flex items-center text-lg font-medium transition-colors text-neutral-400 hover:text-white sm:text-sm",
                 item.href.startsWith(`/${segment}`)
-                  ? "text-foreground"
-                  : "text-foreground/60",
+                  ? "text-white"
+                  : "text-neutral-400",
                 item.disabled && "cursor-not-allowed opacity-80"
               )}
             >
@@ -73,5 +80,5 @@ export function MainNav({ items, children }: MainNavProps) {
         <MobileNav items={items}>{children}</MobileNav>
       )}
     </div>
-  )
+  );
 }

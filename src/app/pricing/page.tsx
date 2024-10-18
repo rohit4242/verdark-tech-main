@@ -1,7 +1,9 @@
 import FAQ from "@/components/FAQ";
 import PricingCard from "@/components/PricingCard";
 import { FC } from "react";
-
+import { BackgroundBeamsWithCollisionDemo } from "@/components/BackgroundBeamsWithCollisionDemo";
+import { CardHoverEffectDemo } from "@/components/CardHoverEffectDemo";
+import Heading from "@/components/Heading";
 interface pageProps {}
 
 const page: FC<pageProps> = ({}) => {
@@ -9,8 +11,10 @@ const page: FC<pageProps> = ({}) => {
     <>
       <PricingCard />
       <div className="mb-24">
-      <FAQ />
-
+        <FAQ />
+        <Heading title="Anything" />
+        <CardHoverEffectDemo />
+        <BackgroundBeamsWithCollisionDemo />
       </div>
     </>
   );

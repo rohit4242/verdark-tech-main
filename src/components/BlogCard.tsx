@@ -12,7 +12,7 @@ const BlogCard: FC<BlogCardProps> = ({ post }) => {
   return (
     <CardContainer className="inter-var">
       <Link href={`/blog/${post.id}`}>
-        <CardBody className=" relative group/card hover:shadow-2xlhover:shadow-emerald-500/[0.1] bg-slate-900 border-white/[0.2]  w-auto max-w-80 sm:w-[30rem] h-auto min-h-[30rem] rounded-xl p-6 border  ">
+        <CardBody className=" relative group/card hover:shadow-2xlhover:shadow-emerald-500/[0.1] bg-black border-white/[0.2]  w-auto max-w-80 sm:w-[30rem] h-auto min-h-[30rem] rounded-xl p-6 border  ">
           <CardItem translateZ="100" className="w-full mt-4 cursor-pointer">
             <Image
               src={post.content.image}

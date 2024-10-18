@@ -6,12 +6,16 @@ import Balancer from "react-wrap-balancer";
 import { FC } from "react";
 import React from "react";
 import { CardHoverEffectDemo } from "@/components/CardHoverEffectDemo";
+import { HeroScrollDemo } from "./HeroScrollDemo";
 
 import Heading from "@/components/Heading";
+import { InfiniteMovingCardsDemo } from "./InfiniteMovingCards";
+import MacbookScrollSection from "./MacbookScrollSection";
+import { TimelineDemo } from "./TimelineDemo";
 
-interface Hero { }
+interface Hero {}
 
-const Hero: FC<Hero> = ({ }) => {
+const Hero: FC<Hero> = ({}) => {
   return (
     <>
       <section className="space-y-6 pb-12 pt-16 lg:py-12">
@@ -42,7 +46,7 @@ const Hero: FC<Hero> = ({ }) => {
           >
             <Balancer>
               <span className="relative bg-gradient-to-r from-indigo-500 to-purple-500/80 bg-clip-text font-extrabold text-transparent">
-              Custom AI Agents 
+                Custom AI Agents
               </span>{" "}
               Designed to Drive Your Business Forward
             </Balancer>
@@ -51,8 +55,10 @@ const Hero: FC<Hero> = ({ }) => {
             className="text-balance max-w-3xl leading-normal text-muted-foreground sm:text-xl sm:leading-8"
             style={{ animationDelay: "0.35s", animationFillMode: "forwards" }}
           >
-            Vedark Tech creates intelligent, custom AI agents designed to meet your unique business needs. Our solutions streamline processes, 
-            boost efficiency, and drive innovation, empowering your business to thrive in an ever-evolving digital world.
+            Vedark Tech creates intelligent, custom AI agents designed to meet
+            your unique business needs. Our solutions streamline processes,
+            boost efficiency, and drive innovation, empowering your business to
+            thrive in an ever-evolving digital world.
           </p>
         </div>
         <div
@@ -62,7 +68,10 @@ const Hero: FC<Hero> = ({ }) => {
           <Link
             href="/pricing"
             prefetch={true}
-            className={cn(buttonVariants({ variant: "outline", size: "lg" }), "gap-2")}
+            className={cn(
+              buttonVariants({ variant: "outline", size: "lg" }),
+              "gap-2"
+            )}
           >
             <span> Pricing</span>
             <ArrowRight className="size-4" />
@@ -83,6 +92,7 @@ const Hero: FC<Hero> = ({ }) => {
           </Link>
         </div>
       </section>
+      <HeroScrollDemo />
       <section className="w-full py-12 md:py-24 lg:py-24 xl:py-24">
         <div className="container flex flex-col items-center justify-center space-y-4 px-4 md:flex-row md:space-y-0 md:px-6 lg:space-x-12 lg:px-12 xl:space-x-16">
           <div className="space-y-3 ">
@@ -129,14 +139,6 @@ const Hero: FC<Hero> = ({ }) => {
               >
                 Chat with Maestrale
               </Link>
-              <Link
-                href="/api"
-                className={cn(
-                  buttonVariants({ variant: "outline", size: "lg" })
-                )}
-              >
-                Maestrale API
-              </Link>
             </div>
           </div>
           <img
@@ -152,15 +154,12 @@ const Hero: FC<Hero> = ({ }) => {
         title="Unveiling the Power of Vedark"
         subtitle="Effortless, Secure, and Profitable Crypto Trading"
       />
-      <CardHoverEffectDemo/>
+      <CardHoverEffectDemo />
 
-      <section className="w-full py-12 bg-gray-800 md:py-24 lg:py-24 xl:py-24">
+      <section className="w-full pb-4 pt-20 bg-gray-800 md:pt-24 lg:pt-32 xl:pt-32">
         <div className="container flex flex-col items-center justify-center space-y-4 px-4 md:flex-row md:space-y-0 md:px-6 lg:space-x-12 lg:px-12 xl:space-x-16">
           <div className="grid items-center gap-6 lg:grid-cols-[1fr_500px] lg:gap-12 xl:grid-cols-[1fr_550px]">
-            <Link
-              href=""
-              target="_blank"
-            >
+            <div>
               <img
                 alt="Image"
                 className="mx-auto overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
@@ -168,7 +167,7 @@ const Hero: FC<Hero> = ({ }) => {
                 src="/images/leaderboard.png"
                 width="500"
               />
-            </Link>
+            </div>
             <div className="flex flex-col justify-center space-y-4">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter text-white sm:text-5xl">
@@ -182,7 +181,7 @@ const Hero: FC<Hero> = ({ }) => {
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
                 <Link
-                  href="https://huggingface.co/spaces/FinancialSupport/open_ita_llm_leaderboard"
+                  href={""}
                   className={cn(
                     buttonVariants({ variant: "outline", size: "lg" })
                   )}
@@ -197,47 +196,36 @@ const Hero: FC<Hero> = ({ }) => {
         </div>
       </section>
       <section className="w-full py-12 bg-gray-800 md:py-24 lg:py-24 xl:py-24">
-  <div className="container flex flex-col items-center justify-center space-y-4 px-4 md:flex-row md:space-y-0 md:px-6 lg:space-x-12 lg:px-12 xl:space-x-16">
-    <div className="grid items-center gap-6 lg:grid-cols-[500px_1fr] lg:gap-12 xl:grid-cols-[550px_1fr]">
-      {/* Text Content */}
-      <div className="flex flex-col justify-center space-y-4">
-        <div className="space-y-2">
-          <h2 className="text-3xl font-bold tracking-tighter text-white sm:text-5xl">
-            Pinocchio ITA leaderboard
-          </h2>
-          <p className="max-w-[600px] text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-            Specialized benchmarks on specific topics as logic, math, law,
-            foreign language and culture for Italian finetuned LLMs
-          </p>
-        </div>
-        <div className="flex flex-col gap-2 min-[400px]:flex-row">
-          <Link
-            href="https://huggingface.co/spaces/mii-llm/pinocchio-ita-leaderboard"
-            className={cn(buttonVariants({ variant: "outline", size: "lg" }))}
-            target="_blank"
-            rel="noreferrer"
-          >
-            Go to the leaderboard
-          </Link>
-        </div>
-      </div>
+        <div className="container flex flex-col items-center justify-center space-y-4 px-4 md:flex-row md:space-y-0 md:px-6 lg:space-x-12 lg:px-12 xl:space-x-16">
+          <div className="grid items-center gap-6 lg:grid-cols-[500px_1fr] lg:gap-12 xl:grid-cols-[550px_1fr]">
+            {/* Text Content */}
+            <div className="flex flex-col justify-center space-y-4">
+              <div className="space-y-2">
+                <h2 className="text-3xl font-bold tracking-tighter text-white sm:text-5xl">
+                  Pinocchio ITA leaderboard
+                </h2>
+                <p className="max-w-[600px] text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  Specialized benchmarks on specific topics as logic, math, law,
+                  foreign language and culture for Italian finetuned LLMs
+                </p>
+              </div>
+            </div>
 
-      {/* Image */}
-      <Link
-        href=""
-        target="_blank"
-      >
-        <img
-          alt="Image"
-          className="mx-auto overflow-hidden rounded-xl object-cover object-center sm:w-full"
-          height="310"
-          src="/images/pinocchio-leaderboard.png"
-          width="500"
-        />
-      </Link>
-    </div>
-  </div>
-</section>
+            {/* Image */}
+            <div>
+              <img
+                alt="Image"
+                className="mx-auto overflow-hidden rounded-xl object-cover object-center sm:w-full"
+                height="310"
+                src="/images/pinocchio-leaderboard.png"
+                width="500"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+     
+      <InfiniteMovingCardsDemo />
     </>
   );
 };
