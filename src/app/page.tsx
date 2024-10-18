@@ -8,9 +8,10 @@ export default function Home() {
   return (
     <main className="min-h-screen max-w-screen-xl mx-auto bg-neutral-950">
       <Hero />
-      <MacbookScrollSection />
+      
 
       <TimelineDemo />
+      <MacbookScrollSection />
       <InfiniteMovingCardsDemo />
 
       <BackgroundBeamsWithCollisionDemo />
