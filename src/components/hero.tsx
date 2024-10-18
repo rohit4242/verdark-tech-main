@@ -225,7 +225,6 @@ const Hero: FC<Hero> = ({}) => {
         </div>
       </section>
      
-      <InfiniteMovingCardsDemo />
     </>
   );
 };

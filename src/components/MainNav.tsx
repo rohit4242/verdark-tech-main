@@ -6,7 +6,7 @@ import { useSelectedLayoutSegment } from "next/navigation";
 
 import { cn } from "@/lib/utils";
 import { MainNavItem } from "@/types";
-import { HomeIcon, SidebarCloseIcon } from "lucide-react";
+import { AlignJustify, HomeIcon, SidebarCloseIcon, X } from "lucide-react";
 import { MobileNav } from "./MobileNav";
 import Image from "next/image";
 
@@ -38,12 +38,12 @@ export function MainNav({ items, children }: MainNavProps) {
   }, [showMobileMenu]);
 
   return (
-    <div className="flex gap-6 md:gap-10 ">
+    <div className="flex gap-6 md:gap-10 w-full justify-between items-center">
       <Link href="/" className="hidden items-center space-x-2 md:flex">
         <span className="hidden font-urban text-xl font-bold sm:inline-block w-32">
           <Image
             src={"/assets/vedark-logo.png"}
-            className=" w-full"
+            className="w-full"
             width={100}
             height={100}
             alt={"logo"}
@@ -69,13 +69,17 @@ export function MainNav({ items, children }: MainNavProps) {
           ))}
         </nav>
       ) : null}
-      <button
-        className="flex items-center space-x-2 md:hidden"
-        onClick={toggleMobileMenu}
-      >
-        {showMobileMenu ? <SidebarCloseIcon /> : <HomeIcon />}
-        <span className="font-bold">Menu</span>
-      </button>
+      <div className="flex justify-between items-center w-full md:w-auto">
+        <div className="md:hidden w-8">
+          <button onClick={toggleMobileMenu}>
+            {showMobileMenu ? <X /> : <AlignJustify />}
+          </button>
+        </div>
+        <div className="md:hidden font-urban text-xl font-bold sm:inline-block w-10">
+          <Image src={"/assets/icon.png"} width={80} height={80} alt={"logo"} />
+        </div>
+      </div>
+
       {showMobileMenu && items && (
         <MobileNav items={items}>{children}</MobileNav>
       )}

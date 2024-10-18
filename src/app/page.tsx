@@ -6,10 +6,13 @@ import { BackgroundBeamsWithCollisionDemo } from "@/components/BackgroundBeamsWi
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col bg-neutral-950 items-center justify-between">
+    <main className="min-h-screen max-w-screen-xl mx-auto bg-neutral-950">
       <Hero />
-      <TimelineDemo />
       <MacbookScrollSection />
+
+      <TimelineDemo />
+      <InfiniteMovingCardsDemo />
+
       <BackgroundBeamsWithCollisionDemo />
     </main>
   );
