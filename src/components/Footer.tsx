@@ -6,7 +6,7 @@ interface FooterProps {}
 
 const Footer: FC<FooterProps> = ({}) => {
   return (
-    <footer className=" rounded-lg shadow bg-slate-950 m-1 text-center">
+    <footer className="shadow bg-neutral-950 text-center">
       <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
         <div className="sm:flex sm:items-center sm:justify-between">
           <a

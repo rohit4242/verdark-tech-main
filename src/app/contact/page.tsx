@@ -6,30 +6,9 @@ interface pageProps {}
 const page: FC<pageProps> = ({}) => {
   return (
     <div className="mb-20 ">
-      <section className="bg-slate-950">
+      <section className="bg-neutral-950">
         <div className="py-2 lg:py-2 mb-8 lg:mb-2 px-4 mx-auto max-w-screen-md">
-          <div className="mx-auto max-w-4xl text-center mt-14">
-            <h1 className=" text-lg font-semibold leading-7 text-gradient">
-              Contact Us
-            </h1>
-            <p className="mt-2 text-4xl tracking-tight font-extrabold  text-white">
-            Let's Talk Crypto
-            </p>
-            <div className="w-[22rem] md:w-[40rem] mx-auto h-2 mt-4 relative">
-              {/* Gradients */}
-              <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
-              <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
-              <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-1/4 blur-sm" />
-              <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4" />
-
-              {/* Radial Gradient to prevent sharp edges */}
-              <div className="absolute inset-0 w-full h-full bg-slate-950 [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
-            </div>
-            <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-slate-300">
-            Share Your Questions or Feedback
-            </p>
-          </div>
-
+          <Heading title=" Let's Talk Crypto" />
           <form action="#" className="space-y-8 mt-10">
             <div>
               <label
@@ -41,7 +20,7 @@ const page: FC<pageProps> = ({}) => {
               <input
                 type="email"
                 id="email"
-                className="shadow-sm 0 border   text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500 shadow-sm-light"
+                className="shadow-sm 0 border   text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 bg-black border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500 shadow-sm-light"
                 placeholder="name@gmail.com"
                 required
               />
@@ -56,7 +35,7 @@ const page: FC<pageProps> = ({}) => {
               <input
                 type="text"
                 id="subject"
-                className="block p-3 w-full text-sm  rounded-lg border  shadow-sm focus:ring-primary-500 focus:border-primary-500 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500 shadow-sm-light"
+                className="block p-3 w-full text-sm  rounded-lg border  shadow-sm focus:ring-primary-500 focus:border-primary-500 bg-black border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500 shadow-sm-light"
                 placeholder="Let us know how we can help you"
                 required
               />
@@ -70,7 +49,7 @@ const page: FC<pageProps> = ({}) => {
               </label>
               <textarea
                 id="message"
-                className="block p-2.5 w-full text-sm  rounded-lg shadow-sm border  focus:ring-primary-500 focus:border-primary-500 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500"
+                className="block p-2.5 w-full text-sm  rounded-lg shadow-sm border  focus:ring-primary-500 focus:border-primary-500 bg-black border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500"
                 placeholder="Leave a comment..."
               ></textarea>
             </div>
@@ -86,7 +65,7 @@ const page: FC<pageProps> = ({}) => {
         </div>
       </section>
 
-      <section className="bg-slate-950">
+      <section className="bg-neutral-950">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl lg:max-w-4xl mx-auto text-center">
             <Heading

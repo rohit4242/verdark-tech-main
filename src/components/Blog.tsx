@@ -25,7 +25,7 @@ const Blog: FC<BlogPostProps> = ({ content, imageUrl, author, date }) => {
   return (
     <TracingBeam className="px-6">
       <div className="max-w-screen-xl mx-auto antialiased pt-4 mb-10 relative text-white">
-        <div className="bg-gray-950 rounded-lg p-8">
+        <div className="bg-neutral-950 rounded-lg p-8">
           <h1 className="text-3xl font-bold text-white mb-2">
             {content.title}
           </h1>
@@ -59,13 +59,13 @@ const Blog: FC<BlogPostProps> = ({ content, imageUrl, author, date }) => {
                 <p className="italic">{strategy.vedarkUsage}</p>
               </div>
             ))}
-            <div className="bg-gray-800 rounded-lg p-6">
+            <div className="bg-black rounded-lg p-6">
               <p className="text-lg font-semibold text-white mb-2">
                 Conclusion:
               </p>
               <p>{content.conclusion}</p>
             </div>
-            <p className="text-gray-400 mt-4">{content.disclaimer}</p>
+            <p className="text-white bg-rose-900 rounded-md p-2 mt-4">{content.disclaimer}</p>
           </div>
         </div>
       </div>

@@ -2,6 +2,7 @@ import Blog from "@/components/Blog";
 import { blogPosts } from "@/lib/data";
 import { FC } from "react";
 
+
 interface PageProps {
   params: { blogId: string };
 }
